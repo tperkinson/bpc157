@@ -14,8 +14,8 @@ const els = {
   evidenceContext: document.querySelector("#evidence-context"),
   libraryGuide: document.querySelector("#library-guide"),
   reportList: document.querySelector("#report-list"),
-  filters: document.querySelector("#filters"),
-  sourceList: document.querySelector("#source-list")
+  filters: document.querySelector("#catalog-filters"),
+  sourceList: document.querySelector("#catalog-list")
 };
 
 const badge = (text) => `<span class="badge">${text}</span>`;
@@ -207,13 +207,13 @@ const renderSources = () => {
   els.sourceList.innerHTML = sources
     .map(
       (source) => `
-        <article class="source-card">
-          <div class="source-topline">
+        <article class="catalog-card">
+          <div class="catalog-topline">
             ${badge(source.evidenceTier)}
             <span>${source.year}</span>
           </div>
           <h3>${source.title}</h3>
-          <p class="source-meta">${source.journal} · ${source.studyDesign}</p>
+          <p class="catalog-meta">${source.journal} · ${source.studyDesign}</p>
           <p>${source.keyTakeaway}</p>
           <p class="limit"><strong>Limit:</strong> ${source.limitations}</p>
           <div class="tag-row">${source.tags.map((tag) => badge(tag)).join("")}</div>
