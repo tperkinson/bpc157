@@ -312,6 +312,334 @@
       "doi": "",
       "pmid": "",
       "notePath": "research/source-notes/fda-bpc157-safety-risks.md"
+    },
+    {
+      "id": "pmid-8298609",
+      "title": "A new gastric juice peptide, BPC. An overview of the stomach-stress-organoprotection hypothesis and beneficial effects of BPC.",
+      "year": 1993,
+      "authors": "Sikiric P, Petek M, et al.",
+      "journal": "Journal of Physiology Paris",
+      "studyType": "Review",
+      "studyDesign": "Foundational review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "history",
+      "tags": [
+        "history",
+        "review",
+        "foundational",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Foundational early review framing BPC as part of the stomach-stress-organoprotection hypothesis before the later BPC-157 literature expanded.",
+      "limitations": "Historical orientation source rather than direct modern efficacy evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8298609/",
+      "fullTextUrl": "",
+      "doi": "10.1016/0928-4257(93)90038-U",
+      "pmid": "8298609",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-14554208",
+      "title": "Gastric pentadecapeptide BPC 157 accelerates healing of transected rat Achilles tendon and in vitro stimulates tendocytes growth.",
+      "year": 2003,
+      "authors": "Staresinic M, Sebecic B, et al.",
+      "journal": "Journal of Orthopaedic Research",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical animal and in vitro study",
+      "evidenceTier": "preclinical",
+      "population": "Rat Achilles tendon transection model and cultured tendocytes",
+      "topic": "musculoskeletal",
+      "tags": [
+        "preclinical",
+        "tendon",
+        "musculoskeletal",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Early musculoskeletal paper showing accelerated Achilles tendon healing in rats together with tendocyte growth effects in vitro.",
+      "limitations": "Preclinical work only; not direct human evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14554208/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0736-0266(03)00110-4",
+      "pmid": "14554208",
+      "discoveredVia": [
+        "pmid-41490200",
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-23782145",
+      "title": "BPC 157 and blood vessels.",
+      "year": 2014,
+      "authors": "Seiwerth S, Brcic L, et al.",
+      "journal": "Current Pharmaceutical Design",
+      "studyType": "Review",
+      "studyDesign": "Focused review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "mechanism",
+      "tags": [
+        "review",
+        "vascular",
+        "mechanism",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Focused review on vascular and endothelial themes that recur across BPC-157 mechanistic claims.",
+      "limitations": "Narrative review built mostly on preclinical literature.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23782145/",
+      "fullTextUrl": "",
+      "doi": "10.2174/13816128113199990421",
+      "pmid": "23782145",
+      "discoveredVia": [
+        "pmid-41490200",
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-29358856",
+      "title": "Stable gastric pentadecapeptide BPC 157 in the treatment of colitis and ischemia and reperfusion in rats: New insights.",
+      "year": 2017,
+      "authors": "Duzel A, Vlainic J, et al.",
+      "journal": "World Journal of Gastroenterology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical animal study",
+      "evidenceTier": "preclinical",
+      "population": "Rat colitis and ischemia-reperfusion models",
+      "topic": "gastrointestinal",
+      "tags": [
+        "preclinical",
+        "gastrointestinal",
+        "colitis",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Detailed gastrointestinal preclinical paper connecting BPC-157 to colitis and ischemia-reperfusion models.",
+      "limitations": "Animal data only, despite therapeutic framing.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29358856/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5752708/",
+      "doi": "10.3748/wjg.v23.i48.8465",
+      "pmid": "29358856",
+      "discoveredVia": [
+        "pmid-40005999",
+        "pmid-41490200"
+      ]
+    },
+    {
+      "id": "pmid-29879879",
+      "title": "Novel Cytoprotective Mediator, Stable Gastric Pentadecapeptide BPC 157. Vascular Recruitment and Gastrointestinal Tract Healing.",
+      "year": 2018,
+      "authors": "Sikiric P, Rucman R, et al.",
+      "journal": "Current Pharmaceutical Design",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "review",
+      "tags": [
+        "review",
+        "gastrointestinal",
+        "vascular",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Review linking cytoprotection, vascular recruitment, and gastrointestinal healing themes across the BPC-157 literature.",
+      "limitations": "Review article rather than new experimental evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29879879/",
+      "fullTextUrl": "",
+      "doi": "10.2174/1381612824666180608101119",
+      "pmid": "29879879",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-29998800",
+      "title": "BPC 157 and Standard Angiogenic Growth Factors. Gastrointestinal Tract Healing, Lessons from Tendon, Ligament, Muscle and Bone Healing.",
+      "year": 2018,
+      "authors": "Seiwerth S, Rucman R, et al.",
+      "journal": "Current Pharmaceutical Design",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "review",
+      "tags": [
+        "review",
+        "angiogenesis",
+        "gastrointestinal",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Integrative review linking angiogenic growth factors and gastrointestinal healing with tendon, ligament, muscle, and bone-repair themes in the BPC-157 literature.",
+      "limitations": "Review-level synthesis rather than new controlled evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29998800/",
+      "fullTextUrl": "",
+      "doi": "10.2174/1381612824666180712110447",
+      "pmid": "29998800",
+      "discoveredVia": [
+        "pmid-40005999",
+        "pmid-41490200"
+      ]
+    },
+    {
+      "id": "pmid-30915550",
+      "title": "Gastric pentadecapeptide body protection compound BPC 157 and its role in accelerating musculoskeletal soft tissue healing.",
+      "year": 2019,
+      "authors": "Gwyer D, Wragg NM, Wilson SL",
+      "journal": "Cell and Tissue Research",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "musculoskeletal",
+      "tags": [
+        "review",
+        "musculoskeletal",
+        "soft-tissue",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Independent musculoskeletal review summarizing why BPC-157 became associated with soft-tissue healing claims.",
+      "limitations": "Review-level evidence and still heavily dependent on preclinical studies.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30915550/",
+      "fullTextUrl": "",
+      "doi": "10.1007/s00441-019-03016-8",
+      "pmid": "30915550",
+      "discoveredVia": [
+        "pmid-41490200"
+      ]
+    },
+    {
+      "id": "pmid-34267654",
+      "title": "Stable Gastric Pentadecapeptide BPC 157 and Wound Healing.",
+      "year": 2021,
+      "authors": "Seiwerth S, Milavic M, et al.",
+      "journal": "Frontiers in Pharmacology",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "wound healing",
+      "tags": [
+        "review",
+        "wound-healing",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Broad wound-healing review summarizing how BPC-157 has been positioned across repair models.",
+      "limitations": "Synthesis source rather than new controlled clinical evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34267654/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8275860/",
+      "doi": "10.3389/fphar.2021.627533",
+      "pmid": "34267654",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-32445447",
+      "title": "BPC 157 Rescued NSAID-cytotoxicity Via Stabilizing Intestinal Permeability and Enhancing Cytoprotection.",
+      "year": 2020,
+      "authors": "Park JM, Lee HJ, Sikiric P, Hahm KB",
+      "journal": "Current Pharmaceutical Design",
+      "studyType": "Journal article",
+      "studyDesign": "Mechanistic review with preclinical emphasis",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "gastrointestinal",
+      "tags": [
+        "review",
+        "gastrointestinal",
+        "nsaid",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Focused paper on BPC-157 in NSAID-related cytotoxicity and intestinal-permeability/cytoprotection themes.",
+      "limitations": "Useful for mechanism framing, but not direct clinical proof in humans.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32445447/",
+      "fullTextUrl": "",
+      "doi": "10.2174/1381612826666200523180301",
+      "pmid": "32445447",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-36551977",
+      "title": "Stable Gastric Pentadecapeptide BPC 157 and Striated, Smooth, and Heart Muscle.",
+      "year": 2022,
+      "authors": "Staresinic M, Japjec M, et al.",
+      "journal": "Biomedicines",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "muscle",
+      "tags": [
+        "review",
+        "muscle",
+        "cardiovascular",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Systems-oriented review focusing on BPC-157 claims across striated, smooth, and cardiac muscle contexts.",
+      "limitations": "Primarily a synthesis of preclinical findings from a recurring research network.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36551977/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9775659/",
+      "doi": "10.3390/biomedicines10123221",
+      "pmid": "36551977",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-36588717",
+      "title": "Pharmacokinetics, distribution, metabolism, and excretion of body-protective compound 157, a potential drug for treating various wounds, in rats and dogs.",
+      "year": 2022,
+      "authors": "He L, Feng D, et al.",
+      "journal": "Frontiers in Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical pharmacokinetic study",
+      "evidenceTier": "preclinical",
+      "population": "Rats and dogs",
+      "topic": "pharmacokinetics",
+      "tags": [
+        "preclinical",
+        "pharmacokinetics",
+        "metabolism",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Pharmacokinetic and metabolism paper addressing distribution, metabolism, and excretion in animal models rather than efficacy.",
+      "limitations": "Useful for drug-handling questions, but still preclinical and not human PK.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36588717/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9794587/",
+      "doi": "10.3389/fphar.2022.1026182",
+      "pmid": "36588717",
+      "discoveredVia": [
+        "pmid-41490200",
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-38675421",
+      "title": "The Stable Gastric Pentadecapeptide BPC 157 Pleiotropic Beneficial Activity and Its Possible Relations with Neurotransmitter Activity.",
+      "year": 2024,
+      "authors": "Sikiric P, Boban Blagaic A, et al.",
+      "journal": "Pharmaceuticals (Basel)",
+      "studyType": "Review",
+      "studyDesign": "Narrative review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "mechanism",
+      "tags": [
+        "review",
+        "neurotransmitter",
+        "mechanism",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Recent review extending BPC-157 claims into neurotransmitter and neuropharmacology-related mechanisms.",
+      "limitations": "Mechanistic review that does not resolve the underlying clinical-evidence gap.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38675421/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11053547/",
+      "doi": "10.3390/ph17040461",
+      "pmid": "38675421",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
     }
   ],
   "reports": [
@@ -333,28 +661,32 @@
       "audience": "public"
     }
   ],
-  "generatedAt": "2026-03-27T13:39:01.236Z",
+  "generatedAt": "2026-03-27T14:18:36.935Z",
   "stats": {
-    "sourceCount": 12,
+    "sourceCount": 24,
     "reportCount": 2,
     "evidenceCounts": {
-      "preclinical": 4,
+      "preclinical": 7,
       "human-trial-registry": 1,
       "human-observational": 1,
       "human-pilot": 1,
-      "review": 2,
+      "review": 11,
       "systematic-review": 1,
       "official-guidance": 2
     },
     "topicCounts": {
-      "history": 2,
+      "history": 3,
       "human evidence": 3,
-      "musculoskeletal": 1,
-      "mechanism": 1,
-      "review": 1,
+      "musculoskeletal": 3,
+      "mechanism": 3,
+      "review": 3,
       "evidence synthesis": 1,
       "orthopaedics": 1,
-      "regulatory": 2
+      "regulatory": 2,
+      "gastrointestinal": 2,
+      "wound healing": 1,
+      "muscle": 1,
+      "pharmacokinetics": 1
     }
   }
 }

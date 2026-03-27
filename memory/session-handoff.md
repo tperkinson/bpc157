@@ -7,6 +7,7 @@
 - Added two narrative reports and source notes for the main references.
 - Added a third summary report focused on historical perspective and source inventory.
 - Added the rule that reports should also have public HTML counterparts linked from the dashboard.
+- Mined BPC-157-specific references from review articles and imported a first curated set into the source catalog.
 - Built the agent memory scaffolding and the public site skeleton.
 - Pushed the repository to GitHub and confirmed the Pages site is live.
 
@@ -17,9 +18,10 @@ The project is usable and public. The evidence summary is intentionally conserva
 ## Next recommended actions
 
 1. Expand the human-trial history around PL-10, PLD-116, and PL14736.
-2. Add patent-level primary documents if the history section becomes a larger public feature.
-3. Keep the GitHub Pages deployment green after future source or site updates.
-4. Keep public claims aligned with `data/library.json`.
+2. Continue reference mining from review papers with inaccessible full-text XML or publisher-only reference lists.
+3. Add patent-level primary documents if the history section becomes a larger public feature.
+4. Keep the GitHub Pages deployment green after future source or site updates.
+5. Keep public claims aligned with `data/library.json`.
 
 ## Guardrails
 
