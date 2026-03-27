@@ -964,6 +964,357 @@
       "discoveredVia": [
         "pmid-40005999"
       ]
+    },
+    {
+      "id": "pmid-7901724",
+      "title": "Hepatoprotective effect of BPC 157, a 15-amino acid peptide, on liver lesions induced by either restraint stress or bile duct and hepatic artery ligation or CCl4 administration. A comparative study with dopamine agonists and somatostatin.",
+      "year": 1993,
+      "authors": "Sikiric P, Seiwerth S, et al.",
+      "journal": "Life Sciences",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical comparative study",
+      "evidenceTier": "preclinical",
+      "population": "Rat liver-lesion models",
+      "topic": "liver",
+      "tags": [
+        "preclinical",
+        "liver",
+        "hepatoprotection",
+        "reference-mined"
+      ],
+      "keyTakeaway": "One of the earliest direct BPC-157 papers in the catalog, extending the peptide's proposed effects into hepatoprotection models.",
+      "limitations": "Foundational animal work only; does not establish human liver benefit.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7901724/",
+      "fullTextUrl": "",
+      "doi": "10.1016/0024-3205(93)90589-U",
+      "pmid": "7901724",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-10499368",
+      "title": "Pentadecapeptide BPC 157 attenuates disturbances induced by neuroleptics: the effect on catalepsy and gastric ulcers in mice and rats.",
+      "year": 1999,
+      "authors": "Jelovac N, Sikiric P, et al.",
+      "journal": "European Journal of Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical neuropharmacology study",
+      "evidenceTier": "preclinical",
+      "population": "Mice and rat neuroleptic-exposure models",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "neuropharmacology",
+        "catalepsy",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Older direct BPC-157 paper linking neuroleptic-induced catalepsy with gastric-ulcer outcomes in animal models.",
+      "limitations": "Model-based preclinical evidence, not clinical neuropsychiatric data.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10499368/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0014-2999(99)00486-0",
+      "pmid": "10499368",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-10672996",
+      "title": "Pentadecapeptide BPC 157 attenuates gastric lesions induced by alloxan in rats and mice.",
+      "year": 1999,
+      "authors": "Petek M, Sikiric P, et al.",
+      "journal": "Journal of Physiology Paris",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical animal study",
+      "evidenceTier": "preclinical",
+      "population": "Rat and mouse gastric-lesion models",
+      "topic": "gastrointestinal",
+      "tags": [
+        "preclinical",
+        "gastrointestinal",
+        "gastric-lesions",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct gastric-lesion paper reinforcing the early GI-cytoprotection strand of the BPC-157 literature.",
+      "limitations": "Animal lesion model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10672996/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0928-4257(99)00120-5",
+      "pmid": "10672996",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-11718984",
+      "title": "Pentadecapeptide BPC 157 cream improves burn-wound healing and attenuates burn-gastric lesions in mice.",
+      "year": 2001,
+      "authors": "Mikus D, Sikiric P, et al.",
+      "journal": "Burns",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical burn-healing study",
+      "evidenceTier": "preclinical",
+      "population": "Mouse burn-wound model",
+      "topic": "wound healing",
+      "tags": [
+        "preclinical",
+        "burn",
+        "wound-healing",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Topical burn-healing paper combining skin-wound and gastric-lesion outcomes in mice.",
+      "limitations": "Animal burn model only; no clinical burn data.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11718984/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0305-4179(01)00055-9",
+      "pmid": "11718984",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-11978191",
+      "title": "Pentadecapeptide BPC 157 attenuates chronic amphetamine-induced behavior disturbances.",
+      "year": 2002,
+      "authors": "Sikiric P, Jelovac N, et al.",
+      "journal": "Acta Pharmacologica Sinica",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical behavioral-pharmacology study",
+      "evidenceTier": "preclinical",
+      "population": "Animal chronic amphetamine-exposure model",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "neuropharmacology",
+        "amphetamine",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct behavior-disturbance paper relevant to later claims around neurotransmitter and CNS effects of BPC-157.",
+      "limitations": "Preclinical behavioral model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11978191/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "11978191",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-15840402",
+      "title": "Gastric pentadecapeptide BPC 157 effective against serotonin syndrome in rats.",
+      "year": 2005,
+      "authors": "Boban Blagaic A, Blagaic V, et al.",
+      "journal": "European Journal of Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical neuropharmacology study",
+      "evidenceTier": "preclinical",
+      "population": "Rat serotonin-syndrome model",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "neuropharmacology",
+        "serotonin",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct rat study on serotonin syndrome, relevant to the later neurotransmitter-focused BPC-157 literature.",
+      "limitations": "Animal syndrome model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15840402/",
+      "fullTextUrl": "",
+      "doi": "10.1016/j.ejphar.2005.02.033",
+      "pmid": "15840402",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-20190676",
+      "title": "Impact of pentadecapeptide BPC 157 on muscle healing impaired by systemic corticosteroid application.",
+      "year": 2010,
+      "authors": "Pevec D, Novinscak T, et al.",
+      "journal": "Medical Science Monitor",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical muscle-healing study",
+      "evidenceTier": "preclinical",
+      "population": "Animal muscle-healing model with corticosteroid impairment",
+      "topic": "muscle",
+      "tags": [
+        "preclinical",
+        "muscle",
+        "corticosteroid",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct muscle-healing study testing whether BPC-157 offsets corticosteroid-impaired repair.",
+      "limitations": "Preclinical muscle model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20190676/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "20190676",
+      "discoveredVia": [
+        "pmid-41490200"
+      ]
+    },
+    {
+      "id": "pmid-20388962",
+      "title": "Gastric pentadecapeptide BPC 157 counteracts morphine-induced analgesia in mice.",
+      "year": 2009,
+      "authors": "Boban Blagaic A, Turcic P, et al.",
+      "journal": "Journal of Physiology and Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical neuropharmacology study",
+      "evidenceTier": "preclinical",
+      "population": "Mouse morphine-analgesia model",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "neuropharmacology",
+        "opioids",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct BPC-157 paper on morphine-induced analgesia, expanding the older CNS/pharmacology cluster.",
+      "limitations": "Preclinical opioid-response model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20388962/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "20388962",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-20388964",
+      "title": "Modulatory effect of gastric pentadecapeptide BPC 157 on angiogenesis in muscle and tendon healing.",
+      "year": 2009,
+      "authors": "Brcic L, Brcic I, et al.",
+      "journal": "Journal of Physiology and Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical mechanistic study",
+      "evidenceTier": "preclinical",
+      "population": "Muscle and tendon-healing models",
+      "topic": "mechanism",
+      "tags": [
+        "preclinical",
+        "angiogenesis",
+        "tendon",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Mechanistic paper focused on angiogenesis in muscle and tendon healing, often cited in repair-oriented summaries.",
+      "limitations": "Preclinical mechanistic work only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20388964/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "20388964",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-21295044",
+      "title": "Pentadecapeptide BPC 157 and its effects on a NSAID toxicity model: diclofenac-induced gastrointestinal, liver, and encephalopathy lesions.",
+      "year": 2011,
+      "authors": "Ilic S, Drmic D, et al.",
+      "journal": "Life Sciences",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical toxicity study",
+      "evidenceTier": "preclinical",
+      "population": "Animal diclofenac-toxicity model",
+      "topic": "toxicity",
+      "tags": [
+        "preclinical",
+        "toxicity",
+        "nsaid",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct NSAID-toxicity paper spanning GI, liver, and encephalopathy lesions in an animal model.",
+      "limitations": "Animal toxicity model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21295044/",
+      "fullTextUrl": "",
+      "doi": "10.1016/j.lfs.2011.01.015",
+      "pmid": "21295044",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-21645505",
+      "title": "Ibuprofen hepatic encephalopathy, hepatomegaly, gastric lesion and gastric pentadecapeptide BPC 157 in rats.",
+      "year": 2011,
+      "authors": "Ilic S, Drmic D, et al.",
+      "journal": "European Journal of Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical toxicity study",
+      "evidenceTier": "preclinical",
+      "population": "Rat ibuprofen-toxicity model",
+      "topic": "toxicity",
+      "tags": [
+        "preclinical",
+        "toxicity",
+        "ibuprofen",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct ibuprofen-toxicity paper linking BPC-157 to hepatic, gastric, and encephalopathy outcomes in rats.",
+      "limitations": "Animal toxicity model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21645505/",
+      "fullTextUrl": "",
+      "doi": "10.1016/j.ejphar.2011.05.038",
+      "pmid": "21645505",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-21840572",
+      "title": "Pentadecapeptide BPC 157 reduces bleeding time and thrombocytopenia after amputation in rats treated with heparin, warfarin or aspirin.",
+      "year": 2012,
+      "authors": "Stupnisek M, Franjic S, et al.",
+      "journal": "Thrombosis Research",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical hemostasis study",
+      "evidenceTier": "preclinical",
+      "population": "Rat amputation/hemostasis model",
+      "topic": "hemostasis",
+      "tags": [
+        "preclinical",
+        "hemostasis",
+        "bleeding",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct hemostasis paper on bleeding time and thrombocytopenia in anticoagulant- or antiplatelet-treated rats.",
+      "limitations": "Animal hemostasis model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21840572/",
+      "fullTextUrl": "",
+      "doi": "10.1016/j.thromres.2011.07.035",
+      "pmid": "21840572",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-31976029",
+      "title": "Intragastric Application of Aspirin, Clopidogrel, Cilostazol, and BPC 157 in Rats: Platelet Aggregation and Blood Clot.",
+      "year": 2019,
+      "authors": "Konosic S, Petricevic M, et al.",
+      "journal": "Oxidative Medicine and Cellular Longevity",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical hemostasis study",
+      "evidenceTier": "preclinical",
+      "population": "Rat platelet-aggregation and blood-clot model",
+      "topic": "hemostasis",
+      "tags": [
+        "preclinical",
+        "hemostasis",
+        "platelets",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct platelet-aggregation and blood-clot paper situating BPC-157 within antiplatelet-drug comparisons in rats.",
+      "limitations": "Animal hemostasis model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31976029/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6955135/",
+      "doi": "10.1155/2019/9084643",
+      "pmid": "31976029",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
     }
   ],
   "reports": [
@@ -985,12 +1336,12 @@
       "audience": "public"
     }
   ],
-  "generatedAt": "2026-03-27T14:25:18.564Z",
+  "generatedAt": "2026-03-27T14:28:07.566Z",
   "stats": {
-    "sourceCount": 36,
+    "sourceCount": 49,
     "reportCount": 2,
     "evidenceCounts": {
-      "preclinical": 18,
+      "preclinical": 31,
       "human-trial-registry": 1,
       "human-observational": 1,
       "human-pilot": 1,
@@ -1002,23 +1353,25 @@
       "history": 3,
       "human evidence": 3,
       "musculoskeletal": 5,
-      "mechanism": 3,
+      "mechanism": 4,
       "review": 3,
       "evidence synthesis": 1,
       "orthopaedics": 1,
       "regulatory": 2,
-      "gastrointestinal": 3,
-      "wound healing": 1,
-      "muscle": 1,
+      "gastrointestinal": 4,
+      "wound healing": 2,
+      "muscle": 2,
       "pharmacokinetics": 1,
       "cardiovascular": 1,
-      "neuropharmacology": 2,
+      "neuropharmacology": 6,
       "pharmacology": 1,
       "cachexia": 1,
       "cytoprotection": 1,
       "vascular": 1,
-      "liver": 1,
-      "fistula": 1
+      "liver": 2,
+      "fistula": 1,
+      "toxicity": 2,
+      "hemostasis": 2
     }
   }
 }
