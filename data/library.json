@@ -79,6 +79,14 @@
       "audience": "public"
     },
     {
+      "id": "historical-source-summary",
+      "title": "BPC-157: historical perspective and source inventory",
+      "date": "2026-03-27",
+      "summary": "A summary report that ties the historical development of BPC-157 research to the actual source categories currently documented in the repository.",
+      "path": "research/reports/2026-03-27-bpc157-historical-source-summary.md",
+      "audience": "public"
+    },
+    {
       "id": "librarian-system",
       "title": "Librarian workflow and memory system",
       "date": "2026-03-27",
