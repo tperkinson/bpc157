@@ -1,0 +1,15 @@
+{
+  "name": "bpc157-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Research library, agent memory, and public dashboard for BPC-157.",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "validate": "node scripts/validate-library.mjs",
+    "search": "node scripts/search-library.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
