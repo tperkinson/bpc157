@@ -20,8 +20,10 @@ const els = {
 
 const badge = (text) => `<span class="badge">${text}</span>`;
 
-const sortReports = (reports) => [...reports].sort((a, b) => {
-  const priorityDiff = (a.priority ?? 999) - (b.priority ?? 999);
+const sortReports = (reports) => reports.slice().sort((a, b) => {
+  const aPriority = a.priority === undefined || a.priority === null ? 999 : a.priority;
+  const bPriority = b.priority === undefined || b.priority === null ? 999 : b.priority;
+  const priorityDiff = aPriority - bPriority;
   if (priorityDiff !== 0) {
     return priorityDiff;
   }
@@ -41,12 +43,18 @@ const renderFindings = (findings) => {
 };
 
 const renderStats = (stats, publicReportCount) => {
+  let humanCount = 0;
+
+  for (const key in stats.evidenceCounts) {
+    if (key.indexOf("human") === 0) {
+      humanCount += stats.evidenceCounts[key];
+    }
+  }
+
   const cards = [
     ["Sources", stats.sourceCount],
     ["Public reports", publicReportCount],
-    ["Human-focused items", Object.entries(stats.evidenceCounts)
-      .filter(([key]) => key.startsWith("human"))
-      .reduce((sum, [, count]) => sum + count, 0)],
+    ["Human-focused items", humanCount],
     ["Preclinical items", stats.evidenceCounts.preclinical || 0]
   ];
 
@@ -62,14 +70,22 @@ const renderStats = (stats, publicReportCount) => {
     .join("");
 };
 
-const countHumanItems = (stats) => Object.entries(stats.evidenceCounts)
-  .filter(([key]) => key.startsWith("human"))
-  .reduce((sum, [, count]) => sum + count, 0);
+const countHumanItems = (stats) => {
+  let humanCount = 0;
+
+  for (const key in stats.evidenceCounts) {
+    if (key.indexOf("human") === 0) {
+      humanCount += stats.evidenceCounts[key];
+    }
+  }
+
+  return humanCount;
+};
 
 const renderEvidenceContext = (data) => {
   const humanCount = countHumanItems(data.stats);
   const preclinicalCount = data.stats.evidenceCounts.preclinical || 0;
-  const officialCount = data.sources.filter((source) => source.tags.includes("official-guidance")).length;
+  const officialCount = data.sources.filter((source) => source.tags.indexOf("official-guidance") !== -1).length;
 
   const cards = [
     {
@@ -150,9 +166,17 @@ const renderReports = (reports) => {
 };
 
 const renderFilters = (sources) => {
-  const tags = Array.from(
-    new Set(sources.flatMap((source) => source.tags))
-  ).sort();
+  const tags = [];
+
+  for (const source of sources) {
+    for (const tag of source.tags) {
+      if (tags.indexOf(tag) === -1) {
+        tags.push(tag);
+      }
+    }
+  }
+
+  tags.sort();
 
   const filterTags = ["all", ...tags];
 
@@ -177,7 +201,7 @@ const renderFilters = (sources) => {
 
 const renderSources = () => {
   const sources = state.data.sources.filter((source) => {
-    return state.selectedTag === "all" || source.tags.includes(state.selectedTag);
+    return state.selectedTag === "all" || source.tags.indexOf(state.selectedTag) !== -1;
   });
 
   els.sourceList.innerHTML = sources
@@ -248,13 +272,44 @@ const init = async () => {
   els.researchQuestion.textContent = data.researchQuestion;
   els.reviewedDate.textContent = `Last reviewed: ${data.project.lastReviewed}`;
 
-  renderFindings(data.keyFindings);
-  renderStats(data.stats, publicReports.length);
-  renderEvidenceContext(data);
-  renderLibraryGuide();
-  renderReports(publicReports);
-  renderFilters(data.sources);
   renderSources();
+
+  try {
+    renderFilters(data.sources);
+  } catch (error) {
+    els.filters.innerHTML = "";
+  }
+
+  try {
+    renderFindings(data.keyFindings);
+  } catch (error) {
+    els.keyFindings.innerHTML = "";
+  }
+
+  try {
+    renderStats(data.stats, publicReports.length);
+  } catch (error) {
+    els.stats.innerHTML = "";
+  }
+
+  try {
+    renderEvidenceContext(data);
+  } catch (error) {
+    els.evidenceContext.innerHTML = "";
+  }
+
+  try {
+    renderLibraryGuide();
+  } catch (error) {
+    els.libraryGuide.innerHTML = "";
+  }
+
+  try {
+    renderReports(publicReports);
+  } catch (error) {
+    els.reportList.innerHTML = "";
+  }
+
   revealOnScroll();
 };
 
