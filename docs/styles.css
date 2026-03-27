@@ -328,12 +328,17 @@ code {
 }
 
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motion-ready .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 500ms ease, transform 500ms ease;
 }
 
-.reveal.visible {
+.motion-ready .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }

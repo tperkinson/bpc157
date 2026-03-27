@@ -213,6 +213,12 @@ const renderSources = () => {
 };
 
 const revealOnScroll = () => {
+  if (!("IntersectionObserver" in window)) {
+    return;
+  }
+
+  document.documentElement.classList.add("motion-ready");
+
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
