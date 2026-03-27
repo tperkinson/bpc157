@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BPC-157: Historical Perspective and Source Inventory</title>
-    <meta
-      name="description"
-      content="Historical perspective and source inventory for the BPC-157 evidence library."
-    />
+    <title>BPC-157: historical perspective and source inventory</title>
+    <meta name="description" content="A summary report tying the historical development of BPC-157 research to the current 59-source inventory documented in the repository." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,23 +13,30 @@
     />
     <link rel="stylesheet" href="../styles.css" />
     <style>
+      :root {
+        --report-accent: #7d4a24;
+        --report-chip: rgba(214, 186, 117, 0.28);
+        --report-tint: rgba(255, 252, 247, 0.84);
+      }
+
       body {
         background:
-          radial-gradient(circle at top left, rgba(214, 186, 117, 0.28), transparent 26%),
+          radial-gradient(circle at top left, rgba(214, 186, 117, 0.28), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(106, 88, 45, 0.18), transparent 24%),
           linear-gradient(180deg, #eee5d5 0%, #f7f3ec 46%, #ece1cf 100%);
       }
 
       .report-shell {
         position: relative;
         z-index: 1;
-        width: min(920px, calc(100% - 2rem));
+        width: min(980px, calc(100% - 2rem));
         margin: 0 auto;
         padding: 2rem 0 4rem;
       }
 
       .report-hero,
       .report-body {
-        background: rgba(255, 252, 247, 0.84);
+        background: var(--report-tint);
         backdrop-filter: blur(14px);
         border: 1px solid rgba(24, 33, 31, 0.12);
         border-radius: 28px;
@@ -49,8 +53,7 @@
       }
 
       .report-meta,
-      .report-links,
-      .citation-list {
+      .report-links {
         display: flex;
         gap: 0.75rem;
         flex-wrap: wrap;
@@ -71,20 +74,16 @@
 
       .report-title {
         margin: 0;
-        font-size: clamp(2.4rem, 5vw, 4.5rem);
-        max-width: 11ch;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        max-width: 16ch;
       }
 
       .report-subtitle {
         margin: 1rem 0 0;
         color: var(--muted);
-        font-size: 1.08rem;
-        line-height: 1.7;
-        max-width: 62ch;
-      }
-
-      .report-links {
-        margin-top: 1.2rem;
+        font-size: 1.05rem;
+        line-height: 1.72;
+        max-width: 66ch;
       }
 
       .pill {
@@ -92,14 +91,18 @@
         align-items: center;
         padding: 0.35rem 0.7rem;
         border-radius: 999px;
-        background: rgba(214, 186, 117, 0.28);
-        border: 1px solid rgba(136, 66, 38, 0.14);
+        background: var(--report-chip);
+        border: 1px solid rgba(24, 33, 31, 0.12);
         font-size: 0.84rem;
+      }
+
+      .report-links {
+        margin-top: 1.2rem;
       }
 
       .summary-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
         gap: 1rem;
         margin: 1.4rem 0 1.6rem;
       }
@@ -111,14 +114,28 @@
         background: rgba(255, 255, 255, 0.62);
       }
 
-      .summary-card h3 {
+      .summary-card h3,
+      .summary-card h4 {
         margin-bottom: 0.35rem;
-        font-size: 1.05rem;
+      }
+
+      .summary-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .summary-value {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: var(--report-accent);
+        font-size: 1.45rem;
+        font-weight: 700;
       }
 
       .report-body h2 {
         margin-top: 2rem;
-        margin-bottom: 0.7rem;
+        margin-bottom: 0.75rem;
       }
 
       .report-body h3,
@@ -130,37 +147,29 @@
       .report-body p,
       .report-body li {
         color: var(--muted);
-        line-height: 1.72;
+        line-height: 1.74;
       }
 
-      .report-body ul {
+      .report-body ul,
+      .report-body ol {
         padding-left: 1.2rem;
       }
 
-      .source-block {
-        margin-top: 1rem;
-        padding: 1rem;
-        border: 1px solid rgba(24, 33, 31, 0.12);
-        border-radius: 18px;
-        background: rgba(255, 255, 255, 0.62);
+      .report-body code {
+        padding: 0.08rem 0.38rem;
+        border-radius: 999px;
+        background: rgba(24, 33, 31, 0.08);
+        font-size: 0.92em;
       }
 
-      .source-block h4 {
-        margin-top: 0;
-      }
-
-      .source-block p {
-        margin-bottom: 0.55rem;
-      }
-
-      .citation-list a,
+      .report-body a,
       .report-links a {
-        color: var(--accent-deep);
+        color: var(--report-accent);
       }
 
       @media (max-width: 560px) {
         .report-shell {
-          width: min(100% - 1rem, 920px);
+          width: min(100% - 1rem, 980px);
           padding-top: 1rem;
         }
 
@@ -185,12 +194,8 @@
           <span class="pill">Updated 2026-03-27</span>
         </div>
         <p class="report-kicker">BPC-157 evidence library</p>
-        <h1 class="report-title">Historical Perspective and Source Inventory</h1>
-        <p class="report-subtitle">
-          A concise historical arc for BPC-157 and a grounded inventory of the source
-          categories that are actually documented in this repository, now expanded to
-          59 traceable sources.
-        </p>
+        <h1 class="report-title">BPC-157: historical perspective and source inventory</h1>
+        <p class="report-subtitle">A summary report tying the historical development of BPC-157 research to the current 59-source inventory documented in the repository.</p>
         <div class="report-links">
           <a href="../index.html#reports">Back to dashboard</a>
           <a href="https://github.com/tperkinson/bpc157/blob/main/research/reports/2026-03-27-bpc157-historical-source-summary.md" target="_blank" rel="noreferrer">View markdown source</a>
@@ -199,207 +204,88 @@
       </section>
 
       <article class="report-body">
-        <p>
-          This report answers two practical questions: what the BPC-157 story looks
-          like historically, and what source types in this project are backed by
-          actual traceable documents rather than repeated commentary.
-        </p>
-
         <div class="summary-grid">
+          
           <section class="summary-card">
-            <h3>Historical core</h3>
-            <p>The indexed literature in this library starts in the 1990s with animal healing work.</p>
-          </section>
-          <section class="summary-card">
+            <span class="summary-value">59 sources</span>
             <h3>Library size</h3>
-            <p>The repository now tracks 59 traceable sources, most of them preclinical or review material.</p>
+            <p>Most of the repository is still preclinical or review material.</p>
           </section>
           <section class="summary-card">
+            <span class="summary-value">3 items</span>
             <h3>Human evidence</h3>
-            <p>The accessible human record remains thin: one registry entry and two small published papers.</p>
+            <p>The accessible human record remains sparse.</p>
           </section>
           <section class="summary-card">
-            <h3>Best synthesis</h3>
-            <p>The 2025 HSS systematic review still captures the imbalance: 35 preclinical studies and 1 clinical study.</p>
+            <span class="summary-value">1993 to 2026</span>
+            <h3>Timespan</h3>
+            <p>The source inventory spans the full documented arc of the literature in this repo.</p>
           </section>
         </div>
-
-        <h2>Historical perspective</h2>
-
-        <h3>1. The story begins with healing and cytoprotection</h3>
-        <p>
-          The oldest indexed source currently in the repository is the 1997 paper
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>,
-          which presents BPC-157 as a gastric pentadecapeptide associated with healing
-          effects in rat models. That supports a narrow historical claim: BPC-157 has
-          been part of the experimental literature since at least the 1990s, but that
-          early literature is preclinical rather than clinical.
-        </p>
-
-        <h3>2. By the 2000s, the literature points to named development programs</h3>
-        <p>
-          The 2007 paper
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
-          matters because it references inflammatory bowel disease trial identifiers
-          such as PL-10, PLD-116, and PL14736. That is historically important, but
-          this repository does not yet have a complete published outcome trail for
-          those programs.
-        </p>
-
-        <h3>3. The 2010s expand the musculoskeletal and mechanistic literature</h3>
-        <p>
-          The current library now includes a larger musculoskeletal block, including
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
-          on rat ligament healing,
-          <a href="https://pubmed.ncbi.nlm.nih.gov/14554208/" target="_blank" rel="noreferrer">PMID 14554208</a>
-          on Achilles tendon healing,
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16583442/" target="_blank" rel="noreferrer">PMID 16583442</a>
-          on tendon-to-bone healing, and
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
-          on tendon fibroblast migration and signaling. These help explain why BPC-157
-          later entered sports-medicine and recovery discussions.
-        </p>
-
-        <h3>4. In the 2020s, public enthusiasm exceeds the human evidence base</h3>
-        <p>
-          The most useful current synthesis in the repository is the 2025 systematic review
-          <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>,
-          which reports 36 included studies from 1993 to 2024, with 35 preclinical
-          studies and 1 clinical study. That ratio is the cleanest single-frame summary
-          of the current evidence base in this project.
-        </p>
-
-        <p>
-          The repository has since grown to 59 traceable sources, but the newer additions
-          mostly deepen the preclinical map across liver injury, portal hypertension,
-          hemostasis, pain, alcohol injury, nitric-oxide-system work, fistula healing,
-          and multisystem cytoprotection. They make the library more complete without
-          materially changing the human-evidence conclusion.
-        </p>
-
-        <h2>Source inventory with actual documents</h2>
-
-        <div class="source-block">
-          <h4>Foundational historical and preclinical papers</h4>
-          <p>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/8298609/" target="_blank" rel="noreferrer">PMID 8298609</a>
-            anchors the earliest conceptual framing of BPC.
-          </p>
-          <p>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>
-            anchors the early healing literature. 
-            <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
-            extends that history and ties the literature to named IBD development programs.
-          </p>
-        </div>
-
-        <div class="source-block">
-          <h4>Preclinical musculoskeletal and mechanistic studies</h4>
-          <p>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/14554208/" target="_blank" rel="noreferrer">PMID 14554208</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/16583442/" target="_blank" rel="noreferrer">PMID 16583442</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
-            and
-            <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
-            are central examples, while later additions such as
-            <a href="https://pubmed.ncbi.nlm.nih.gov/34829776/" target="_blank" rel="noreferrer">PMID 34829776</a>
-            and
-            <a href="https://pubmed.ncbi.nlm.nih.gov/20190676/" target="_blank" rel="noreferrer">PMID 20190676</a>
-            broaden the muscle and myotendinous side of the map. These are examples of the kind
-            of work that drives downstream repair claims.
-          </p>
-        </div>
-
-        <div class="source-block">
-          <h4>Gastrointestinal, liver, vascular, and hemostasis studies</h4>
-          <p>
-            The expanded library now includes
-            <a href="https://pubmed.ncbi.nlm.nih.gov/29358856/" target="_blank" rel="noreferrer">PMID 29358856</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/11595456/" target="_blank" rel="noreferrer">PMID 11595456</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/32547687/" target="_blank" rel="noreferrer">PMID 32547687</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/32226643/" target="_blank" rel="noreferrer">PMID 32226643</a>,
-            and
-            <a href="https://pubmed.ncbi.nlm.nih.gov/31976029/" target="_blank" rel="noreferrer">PMID 31976029</a>.
-            This cluster helps explain why BPC-157 is often presented as a broad cytoprotective
-            or vascular-modulating peptide rather than a narrow repair compound.
-          </p>
-        </div>
-
-        <div class="source-block">
-          <h4>Accessible human-facing records</h4>
-          <p>
-            <a href="https://clinicaltrials.gov/study/NCT02637284" target="_blank" rel="noreferrer">NCT02637284</a>
-            is the clearest formal human trial registry entry currently in the repo.
-          </p>
-          <p>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/34324435/" target="_blank" rel="noreferrer">PMID 34324435</a>
-            is a small retrospective knee-pain report, and
-            <a href="https://pubmed.ncbi.nlm.nih.gov/40131143/" target="_blank" rel="noreferrer">PMID 40131143</a>
-            is a two-person IV safety pilot. Together they show that human reporting exists,
-            but remains too limited for strong clinical conclusions.
-          </p>
-        </div>
-
-        <div class="source-block">
-          <h4>Evidence syntheses and orientation reviews</h4>
-          <p>
-            <a href="https://pubmed.ncbi.nlm.nih.gov/40005999/" target="_blank" rel="noreferrer">PMID 40005999</a>
-            provides a literature-and-patent review,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>
-            provides the most useful current systematic review, and
-            <a href="https://pubmed.ncbi.nlm.nih.gov/41490200/" target="_blank" rel="noreferrer">PMID 41490200</a>
-            shows how BPC-157 is framed in current orthopaedic peptide discussions.
-          </p>
-        </div>
-
-        <div class="source-block">
-          <h4>Official regulatory and sports-governance sources</h4>
-          <p>
-            The repository includes
-            <a href="https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" target="_blank" rel="noreferrer">USADA guidance</a>
-            and the
-            <a href="https://www.fda.gov/drugs/human-drug-compounding/safety-risks-associated-certain-bulk-drug-substances-nominated-use-compounding" target="_blank" rel="noreferrer">FDA compounding safety-risk page</a>.
-            These are not efficacy studies, but they are essential for responsible public language.
-          </p>
-        </div>
-
-        <h2>What this source set supports</h2>
-        <ul>
-          <li>BPC-157 has a real indexed history in experimental research.</li>
-          <li>The current literature in this repo is dominated by preclinical animal, mechanistic, injury-model, and review work.</li>
-          <li>The accessible human source base remains small.</li>
-          <li>The strongest recent synthesis still shows a major human-evidence gap.</li>
-          <li>Official sources support caution around approval status, safety, and athlete use.</li>
-        </ul>
-
-        <h2>What it does not support</h2>
-        <ul>
-          <li>Strong efficacy claims in humans.</li>
-          <li>A fully reconstructed publication trail for the older IBD development program.</li>
-          <li>A settled safety profile for routine clinical use.</li>
-        </ul>
-
-        <h2>Primary links used in this report</h2>
-        <div class="citation-list">
-          <a href="https://pubmed.ncbi.nlm.nih.gov/8298609/" target="_blank" rel="noreferrer">PMID 8298609</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/14554208/" target="_blank" rel="noreferrer">PMID 14554208</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/16583442/" target="_blank" rel="noreferrer">PMID 16583442</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/29358856/" target="_blank" rel="noreferrer">PMID 29358856</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/11595456/" target="_blank" rel="noreferrer">PMID 11595456</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/31976029/" target="_blank" rel="noreferrer">PMID 31976029</a>
-          <a href="https://clinicaltrials.gov/study/NCT02637284" target="_blank" rel="noreferrer">NCT02637284</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/34324435/" target="_blank" rel="noreferrer">PMID 34324435</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/40131143/" target="_blank" rel="noreferrer">PMID 40131143</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/40005999/" target="_blank" rel="noreferrer">PMID 40005999</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/41490200/" target="_blank" rel="noreferrer">PMID 41490200</a>
-          <a href="https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" target="_blank" rel="noreferrer">USADA</a>
-          <a href="https://www.fda.gov/drugs/human-drug-compounding/safety-risks-associated-certain-bulk-drug-substances-nominated-use-compounding" target="_blank" rel="noreferrer">FDA</a>
-        </div>
+        <h2>Purpose</h2>
+<p>This report answers two practical questions:</p>
+<ol><li>What does the BPC-157 story look like historically?</li><li>What source types in this repository are backed by actual traceable documents?</li></ol>
+<p>The point is not to imply certainty. The point is to show what can actually be grounded in sources already stored in the project.</p>
+<p>At the time of this update, the repository contains 59 traceable sources. Most of that expansion came from mining the reference lists of review papers already in the library and adding the direct BPC-157 papers that those reviews cited.</p>
+<h2>Historical perspective</h2>
+<h3>1. The literature begins as a wound-healing and cytoprotection story</h3>
+<p>The indexed record reaches back to the 1990s. Early papers frame BPC-157 as a gastric pentadecapeptide associated with healing and tissue protection. The 1997 paper in <em>Journal of Physiology Paris</em> is the clearest early anchor in the current library and reports improved healing-related measures in rat models.</p>
+<p>At this stage, the project can support a narrow historical claim:</p>
+<ul><li>BPC-157 has been present in the indexed experimental literature since at least the 1990s.</li><li>The early literature is centered on animal healing models rather than controlled human treatment studies.</li></ul>
+<h3>2. By the 2000s, the literature links BPC-157 to named clinical-trial programs</h3>
+<p>The 2007 <em>Surgery Today</em> rat anastomosis paper is historically important because it refers to inflammatory bowel disease trial identifiers such as PL-10, PLD-116, and PL14736. That creates a documented bridge between the experimental literature and claims of earlier human development activity.</p>
+<p>What this repository can support today is more limited than the broader claim often repeated online:</p>
+<ul><li>The literature contains historical references to human-trial programs.</li><li>The current public source base in this repo does not yet include a full published outcome record for those older programs.</li></ul>
+<h3>3. In the 2010s, musculoskeletal and mechanistic papers become prominent</h3>
+<p>The 2003 Achilles tendon paper, the 2006 tendon-to-bone paper, the 2010 rat ligament paper, and the 2011 tendon/mechanism paper help explain why BPC-157 later became popular in sports-medicine and recovery conversations. This period expands the literature into:</p>
+<ul><li>ligament repair</li><li>tendon healing</li><li>tendon-to-bone repair</li><li>muscle healing</li><li>fibroblast migration and survival</li><li>pathway-level mechanism claims</li></ul>
+<p>This is also the era in which many downstream claims about repair and regeneration seem to draw their scientific language.</p>
+<h3>4. In the 2020s, public interest outpaces human evidence</h3>
+<p>The modern picture is shaped by a mismatch:</p>
+<ul><li>there is still a broad preclinical literature</li><li>there are only a few clearly accessible human-facing records</li><li>regulatory and anti-doping scrutiny is more visible</li></ul>
+<p>The current repository supports that conclusion directly through one registry record, two small human papers, a larger network of preclinical and review papers, and official FDA and USADA material.</p>
+<h2>Overview of source types with actual sources in this repository</h2>
+<h3>A. Early historical and foundational preclinical papers</h3>
+<p>These are the sources that establish the older research lineage:</p>
+<ul><li>PMID 8298609: 1993 foundational overview of BPC and stomach-stress-organoprotection</li><li>PMID 9403790: 1997 healing paper in rat models</li><li>PMID 17713731: 2007 rat anastomosis paper that also points to earlier IBD trial programs</li></ul>
+<p>These sources support the historical timeline but do not establish modern clinical efficacy.</p>
+<h3>B. Preclinical musculoskeletal and mechanistic studies</h3>
+<p>These are now a substantial block in the library, not just a couple of examples. Core entries include:</p>
+<ul><li>PMID 14554208: Achilles tendon healing and tendocyte growth</li><li>PMID 16583442: tendon-to-bone healing and corticosteroid aggravation</li><li>PMID 20225319: rat medial collateral ligament healing</li><li>PMID 21030672: tendon fibroblast migration, survival, and FAK/paxillin signaling</li><li>PMID 20190676: muscle healing impaired by corticosteroids</li><li>PMID 20388964: angiogenesis in muscle and tendon healing</li><li>PMID 34829776: myotendinous junction injury</li></ul>
+<p>These sources are important because many public recovery claims appear to depend on this part of the evidence base.</p>
+<h3>C. Gastrointestinal, liver, cytoprotection, and vascular/hemodynamic studies</h3>
+<p>This cluster is now one of the clearest themes in the repository:</p>
+<ul><li>PMID 29358856: colitis and ischemia-reperfusion</li><li>PMID 29879879: vascular recruitment and gastrointestinal tract healing review</li><li>PMID 11595456: portal hypertension and liver lesions in chronic alcohol models</li><li>PMID 32547687: liver ischemia-reperfusion / Pringle maneuver</li><li>PMID 32226643: Budd-Chiari syndrome model</li><li>PMID 27895400: esophagogastric anastomosis healing</li><li>PMID 34680419: alcohol-induced gastric-lesion model</li></ul>
+<p>This section of the literature helps explain why BPC-157 is so often framed as a broad cytoprotective peptide rather than as a narrow tissue-specific agent.</p>
+<h3>D. Human evidence that is actually accessible in the current repo</h3>
+<p>This is the most important category to keep narrow and honest.</p>
+<h4>Registered trial record</h4>
+<ul><li>NCT02637284: phase I oral safety/pharmacokinetic study record in healthy volunteers</li></ul>
+<p>This supports the statement that a formal human study was registered publicly. It does not support a claim of published efficacy.</p>
+<h4>Published observational human study</h4>
+<ul><li>PMID 34324435: retrospective chart review of intra-articular BPC-157 use for mixed knee-pain presentations</li></ul>
+<p>This supports a statement that limited clinic-based human reporting exists. It does not justify broad clinical conclusions.</p>
+<h4>Published pilot safety study</h4>
+<ul><li>PMID 40131143: two-person intravenous safety pilot</li></ul>
+<p>This supports a statement that minimal published human safety reporting exists. It does not establish general safety.</p>
+<h3>E. Evidence syntheses and orientation reviews</h3>
+<p>These sources help interpret the overall field:</p>
+<ul><li>PMID 40005999: literature and patent review</li><li>PMID 40756949: systematic review in orthopaedic sports medicine</li><li>PMID 41490200: broader orthopaedic peptide review</li></ul>
+<p>Of these, the 2025 HSS Journal systematic review is the most useful summary source in the current repo because it makes the imbalance explicit: 35 preclinical studies and 1 clinical study among its included set.</p>
+<h3>F. Official regulatory and sports-governance sources</h3>
+<p>These sources matter because they shape what can be said responsibly in public-facing material:</p>
+<ul><li>USADA BPC-157 guidance</li><li>FDA compounding safety-risk page</li></ul>
+<p>These sources support cautious language around approval status, athlete risk, and unresolved safety questions.</p>
+<h2>What the source inventory currently supports</h2>
+<p>Taken together, the actual sources in this repository support the following summary:</p>
+<ul><li>BPC-157 has a real indexed history in experimental research.</li><li>The literature is dominated by preclinical animal, mechanistic, injury-model, and review work.</li><li>There are only a few clearly accessible human-facing records in the current source set.</li><li>The best recent evidence synthesis still shows a major human-evidence gap.</li><li>Official sources justify cautious language around safety, approval, and sports use.</li></ul>
+<p>The newer source-mining work also supports a more precise statement:</p>
+<ul><li>the repository is now much better as a map of the literature than it was in the first pass</li><li>but the added completeness mostly expanded preclinical breadth, not human certainty</li></ul>
+<h2>What the source inventory does not yet support</h2>
+<p>The current source set does not yet support:</p>
+<ul><li>strong efficacy claims in humans</li><li>a reconstructed full publication trail for the older IBD development program</li><li>a settled safety profile for routine human clinical use</li></ul>
+<h2>Recommended use</h2>
+<p>If this project is shared publicly, this report should be used as the bridge between the short evidence snapshot and the raw source catalog. It gives readers a historical frame without pretending the evidence is stronger than it is.</p>
       </article>
     </main>
   </body>

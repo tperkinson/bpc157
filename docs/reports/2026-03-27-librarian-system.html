@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librarian workflow and memory system</title>
+    <meta name="description" content="The operating structure for source finding, reference mining, storage, cataloging, retrieval, and agent handoff so a fresh thread can continue the project without losing context." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      :root {
+        --report-accent: #38506f;
+        --report-chip: rgba(157, 183, 214, 0.26);
+        --report-tint: rgba(249, 251, 255, 0.86);
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(121, 143, 176, 0.22), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(52, 63, 87, 0.16), transparent 24%),
+          linear-gradient(180deg, #e7edf6 0%, #f5f8fb 44%, #dde6f1 100%);
+      }
+
+      .report-shell {
+        position: relative;
+        z-index: 1;
+        width: min(980px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 4rem;
+      }
+
+      .report-hero,
+      .report-body {
+        background: var(--report-tint);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(28, 36, 33, 0.12);
+      }
+
+      .report-hero {
+        padding: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .report-body {
+        padding: 1.6rem;
+      }
+
+      .report-meta,
+      .report-links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .report-meta {
+        margin-bottom: 1rem;
+      }
+
+      .report-kicker {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+
+      .report-title {
+        margin: 0;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        max-width: 16ch;
+      }
+
+      .report-subtitle {
+        margin: 1rem 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.72;
+        max-width: 66ch;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: var(--report-chip);
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        font-size: 0.84rem;
+      }
+
+      .report-links {
+        margin-top: 1.2rem;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 1rem;
+        margin: 1.4rem 0 1.6rem;
+      }
+
+      .summary-card {
+        padding: 1rem;
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .summary-card h3,
+      .summary-card h4 {
+        margin-bottom: 0.35rem;
+      }
+
+      .summary-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .summary-value {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: var(--report-accent);
+        font-size: 1.45rem;
+        font-weight: 700;
+      }
+
+      .report-body h2 {
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .report-body h3,
+      .report-body h4 {
+        margin-top: 1.4rem;
+        margin-bottom: 0.45rem;
+      }
+
+      .report-body p,
+      .report-body li {
+        color: var(--muted);
+        line-height: 1.74;
+      }
+
+      .report-body ul,
+      .report-body ol {
+        padding-left: 1.2rem;
+      }
+
+      .report-body code {
+        padding: 0.08rem 0.38rem;
+        border-radius: 999px;
+        background: rgba(24, 33, 31, 0.08);
+        font-size: 0.92em;
+      }
+
+      .report-body a,
+      .report-links a {
+        color: var(--report-accent);
+      }
+
+      @media (max-width: 560px) {
+        .report-shell {
+          width: min(100% - 1rem, 980px);
+          padding-top: 1rem;
+        }
+
+        .report-hero,
+        .report-body {
+          padding: 1rem;
+        }
+
+        .report-title {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backdrop backdrop-one"></div>
+    <div class="backdrop backdrop-two"></div>
+    <main class="report-shell">
+      <section class="report-hero">
+        <div class="report-meta">
+          <span class="pill">Project report</span>
+          <span class="pill">Updated 2026-03-27</span>
+        </div>
+        <p class="report-kicker">BPC-157 evidence library</p>
+        <h1 class="report-title">Librarian workflow and memory system</h1>
+        <p class="report-subtitle">The operating structure for source finding, reference mining, storage, cataloging, retrieval, and agent handoff so a fresh thread can continue the project without losing context.</p>
+        <div class="report-links">
+          <a href="../index.html#reports">Back to dashboard</a>
+          <a href="https://github.com/tperkinson/bpc157/blob/main/research/reports/2026-03-27-librarian-system.md" target="_blank" rel="noreferrer">View markdown source</a>
+          <a href="https://github.com/tperkinson/bpc157" target="_blank" rel="noreferrer">Open repository</a>
+        </div>
+      </section>
+
+      <article class="report-body">
+        <div class="summary-grid">
+          
+          <section class="summary-card">
+            <span class="summary-value">4 phases</span>
+            <h3>Workflow</h3>
+            <p>Finding, storing, cataloging, and retrieval are kept as distinct tasks.</p>
+          </section>
+          <section class="summary-card">
+            <span class="summary-value">4 startup docs</span>
+            <h3>Memory</h3>
+            <p>New threads bootstrap from START_HERE, the session handoff, the resource map, and open questions.</p>
+          </section>
+          <section class="summary-card">
+            <span class="summary-value">4 HTML reports</span>
+            <h3>Publishing</h3>
+            <p>Every report now has a linked public HTML counterpart in docs/reports/.</p>
+          </section>
+        </div>
+        <h2>Goal</h2>
+<p>This project needs two retrieval systems at once:</p>
+<ul><li>a research library for BPC-157 itself</li><li>an agent memory so a new thread can continue the work without re-discovering context</li></ul>
+<h2>Research library structure</h2>
+<h3>Finding</h3>
+<ul><li>Search primary databases first: PubMed, ClinicalTrials.gov, FDA, USADA/WADA, patent sources.</li><li>Add only sources that materially improve the history, evidence, or regulatory picture.</li><li>Prefer original studies over downstream commentary.</li><li>Mine the reference lists of in-scope review papers to expand the direct-source inventory before relying on broad review conclusions.</li></ul>
+<h3>Storing</h3>
+<ul><li>Record every accepted source in <code>data/library.json</code>.</li><li>Create a note in <code>research/source-notes/</code> when a source changes the top-level summary or requires nuance.</li><li>Use stable links and persistent identifiers whenever possible.</li><li>Every report must have a markdown source file in <code>research/reports/</code> and a public HTML counterpart in <code>docs/reports/</code>.</li><li>Add the HTML location to the matching report entry in <code>data/library.json</code> so the dashboard can link to it directly.</li></ul>
+<h3>Cataloging</h3>
+<p>Each source record should answer:</p>
+<ul><li>what kind of document is this</li><li>is it human, preclinical, review, registry, or official guidance</li><li>what is the strongest supported claim</li><li>what is the main limitation</li></ul>
+<p>In practice, the current library shows why this matters: a source-count increase can mostly reflect additional preclinical and review material rather than any real change in human evidence quality.</p>
+<h3>Retrieval</h3>
+<ul><li>Terminal retrieval: <code>npm run search -- &lt;term&gt;</code></li><li>Reference-mining support: <code>node scripts/mine-bpc-reference-candidates.mjs</code></li><li>Human-readable reports: <code>research/reports/</code></li><li>Public report pages: <code>docs/reports/</code></li><li>Public browsing: GitHub Pages site under <code>docs/</code></li></ul>
+<h2>Agent memory structure</h2>
+<h3>Startup documents</h3>
+<ul><li><code>memory/START_HERE.md</code>: first document for a new thread</li><li><code>memory/resource-map.md</code>: where everything lives</li><li><code>memory/open-questions.md</code>: unfinished research edges</li><li><code>memory/session-handoff.md</code>: current state and next actions</li></ul>
+<h3>Memory rules</h3>
+<ul><li>Keep memory operational, not reflective.</li><li>Update handoff and open questions whenever the source library materially changes.</li><li>Avoid burying the active status inside long reports.</li></ul>
+<h2>Update loop for future threads</h2>
+<ol><li>Read <code>memory/START_HERE.md</code>.</li><li>Scan <code>memory/session-handoff.md</code>.</li><li>Check <code>data/library.json</code> for current source inventory.</li><li>Read only the source notes relevant to the next question.</li><li>Update reports, memory, and the site in that order.</li></ol>
+<h2>Why this structure works</h2>
+<p>It avoids the usual failure mode where:</p>
+<ul><li>public summaries drift from the source catalog</li><li>new threads lose project context</li><li>notes exist, but no one knows where to start</li></ul>
+<p>Here the catalog, the reports, the memory, and the website all point at the same evidence base.</p>
+      </article>
+    </main>
+  </body>
+</html>

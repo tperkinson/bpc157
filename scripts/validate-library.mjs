@@ -20,6 +20,16 @@ const requiredSourceFields = [
   "tags"
 ];
 
+const requiredReportFields = [
+  "id",
+  "title",
+  "date",
+  "summary",
+  "path",
+  "htmlPath",
+  "audience"
+];
+
 const ensureUnique = (items, label) => {
   const seen = new Set();
 
@@ -47,6 +57,23 @@ for (const source of library.sources) {
 
   if (!Array.isArray(source.tags) || source.tags.length === 0) {
     errors.push(`source ${source.id} must have at least one tag`);
+  }
+}
+
+for (const report of library.reports) {
+  for (const field of requiredReportFields) {
+    if (
+      report[field] === undefined ||
+      report[field] === null ||
+      report[field] === ""
+    ) {
+      errors.push(`report ${report.id} missing ${field}`);
+    }
+  }
+
+  const reportPath = path.join(root, report.path);
+  if (!fs.existsSync(reportPath)) {
+    errors.push(`report ${report.id} path does not exist: ${report.path}`);
   }
 }
 

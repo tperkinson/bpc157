@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPC-157: chronological source report</title>
+    <meta name="description" content="A bullet-point chronological report of every source currently in the library, with a short note on what each source covers." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      :root {
+        --report-accent: #2e5a49;
+        --report-chip: rgba(133, 176, 151, 0.25);
+        --report-tint: rgba(247, 252, 248, 0.86);
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(104, 152, 118, 0.22), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(55, 86, 71, 0.18), transparent 24%),
+          linear-gradient(180deg, #e4eee8 0%, #f4f7f5 44%, #dde9e0 100%);
+      }
+
+      .report-shell {
+        position: relative;
+        z-index: 1;
+        width: min(980px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 4rem;
+      }
+
+      .report-hero,
+      .report-body {
+        background: var(--report-tint);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(28, 36, 33, 0.12);
+      }
+
+      .report-hero {
+        padding: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .report-body {
+        padding: 1.6rem;
+      }
+
+      .report-meta,
+      .report-links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .report-meta {
+        margin-bottom: 1rem;
+      }
+
+      .report-kicker {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+
+      .report-title {
+        margin: 0;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        max-width: 16ch;
+      }
+
+      .report-subtitle {
+        margin: 1rem 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.72;
+        max-width: 66ch;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: var(--report-chip);
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        font-size: 0.84rem;
+      }
+
+      .report-links {
+        margin-top: 1.2rem;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 1rem;
+        margin: 1.4rem 0 1.6rem;
+      }
+
+      .summary-card {
+        padding: 1rem;
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .summary-card h3,
+      .summary-card h4 {
+        margin-bottom: 0.35rem;
+      }
+
+      .summary-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .summary-value {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        color: var(--report-accent);
+        font-size: 1.45rem;
+        font-weight: 700;
+      }
+
+      .report-body h2 {
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .report-body h3,
+      .report-body h4 {
+        margin-top: 1.4rem;
+        margin-bottom: 0.45rem;
+      }
+
+      .report-body p,
+      .report-body li {
+        color: var(--muted);
+        line-height: 1.74;
+      }
+
+      .report-body ul,
+      .report-body ol {
+        padding-left: 1.2rem;
+      }
+
+      .report-body code {
+        padding: 0.08rem 0.38rem;
+        border-radius: 999px;
+        background: rgba(24, 33, 31, 0.08);
+        font-size: 0.92em;
+      }
+
+      .report-body a,
+      .report-links a {
+        color: var(--report-accent);
+      }
+
+      @media (max-width: 560px) {
+        .report-shell {
+          width: min(100% - 1rem, 980px);
+          padding-top: 1rem;
+        }
+
+        .report-hero,
+        .report-body {
+          padding: 1rem;
+        }
+
+        .report-title {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backdrop backdrop-one"></div>
+    <div class="backdrop backdrop-two"></div>
+    <main class="report-shell">
+      <section class="report-hero">
+        <div class="report-meta">
+          <span class="pill">Public report</span>
+          <span class="pill">Updated 2026-03-27</span>
+        </div>
+        <p class="report-kicker">BPC-157 evidence library</p>
+        <h1 class="report-title">BPC-157: chronological source report</h1>
+        <p class="report-subtitle">A bullet-point chronological report of every source currently in the library, with a short note on what each source covers.</p>
+        <div class="report-links">
+          <a href="../index.html#reports">Back to dashboard</a>
+          <a href="https://github.com/tperkinson/bpc157/blob/main/research/reports/2026-03-27-bpc157-chronological-source-report.md" target="_blank" rel="noreferrer">View markdown source</a>
+          <a href="https://github.com/tperkinson/bpc157" target="_blank" rel="noreferrer">Open repository</a>
+        </div>
+      </section>
+
+      <article class="report-body">
+        <div class="summary-grid">
+          
+          <section class="summary-card">
+            <span class="summary-value">59 sources</span>
+            <h3>Coverage</h3>
+            <p>The report walks every accepted source in year order.</p>
+          </section>
+          <section class="summary-card">
+            <span class="summary-value">1993 to 2026</span>
+            <h3>Timespan</h3>
+            <p>The library currently runs from early foundational papers to recent reviews.</p>
+          </section>
+          <section class="summary-card">
+            <span class="summary-value">3 items</span>
+            <h3>Human record</h3>
+            <p>The chronology makes the thin human layer visible against a much larger preclinical stack.</p>
+          </section>
+        </div>
+        <h2>Purpose</h2>
+<p>This report is a chronological inventory of every source currently accepted into the BPC-157 library. Each bullet gives the year, the source identifier, and a short note on what the source covers.</p>
+<p>It is meant to sit between the shorter summary reports and the raw source catalog. The goal is completeness, not brevity.</p>
+<h2>Chronological source list</h2>
+<h3>1990s</h3>
+<ul><li>1993. PMID 8298609, <em>A new gastric juice peptide, BPC. An overview of the stomach-stress-organoprotection hypothesis and beneficial effects of BPC.</em> Covers the foundational overview that frames BPC around stomach-stress-organoprotection before the later BPC-157 literature expands.</li><li>1993. PMID 7901724, <em>Hepatoprotective effect of BPC 157, a 15-amino acid peptide, on liver lesions induced by either restraint stress or bile duct and hepatic artery ligation or CCl4 administration. A comparative study with dopamine agonists and somatostatin.</em> Covers one of the earliest direct BPC-157 papers, extending the literature into hepatoprotection models.</li><li>1997. PMID 9403790, <em>BPC 157's effect on healing.</em> Covers one of the earliest indexed healing papers, with rat-model results on granulation tissue, collagen, angiogenesis, and tensile strength.</li><li>1997. PMID 9298922, <em>The influence of a novel pentadecapeptide, BPC 157, on N(G)-nitro-L-arginine methylester and L-arginine effects on stomach mucosa integrity and blood pressure.</em> Covers stomach-mucosa integrity and blood-pressure effects under nitric-oxide-pathway manipulation.</li><li>1997. PMID 9403788, <em>The influence of BPC 157 on nitric oxide agonist and antagonist induced lesions in broiler chicks.</em> Covers a non-rodent lesion model tied to nitric-oxide agonist and antagonist exposure.</li><li>1999. PMID 10499368, <em>Pentadecapeptide BPC 157 attenuates disturbances induced by neuroleptics: the effect on catalepsy and gastric ulcers in mice and rats.</em> Covers neuroleptic-induced catalepsy alongside gastric-ulcer outcomes in animal models.</li><li>1999. PMID 10672996, <em>Pentadecapeptide BPC 157 attenuates gastric lesions induced by alloxan in rats and mice.</em> Covers gastric-lesion outcomes and reinforces the early gastrointestinal cytoprotection theme.</li><li>1999. PMID 10707891, <em>The effect of a novel pentadecapeptide BPC 157 on development of tolerance and physical dependence following repeated administration of diazepam.</em> Covers tolerance and physical dependence after repeated diazepam exposure.</li></ul>
+<h3>2000s</h3>
+<ul><li>2000. PMID 10791689, <em>The antidepressant effect of an antiulcer pentadecapeptide BPC 157 in Porsolt's test and chronic unpredictable stress in rats. A comparison with antidepressants.</em> Covers antidepressant-like effects in rat behavioral models.</li><li>2001. PMID 11718984, <em>Pentadecapeptide BPC 157 cream improves burn-wound healing and attenuates burn-gastric lesions in mice.</em> Covers topical burn-wound healing together with burn-related gastric-lesion outcomes.</li><li>2001. PMID 11595456, <em>Portal hypertension and liver lesions in chronically alcohol drinking rats prevented and reversed by stable gastric pentadecapeptide BPC 157 (PL-10, PLD-116), and propranolol, but not ranitidine.</em> Covers alcohol-associated portal hypertension and liver lesions in rats.</li><li>2002. PMID 11978191, <em>Pentadecapeptide BPC 157 attenuates chronic amphetamine-induced behavior disturbances.</em> Covers chronic amphetamine-related behavior disturbance models.</li><li>2003. PMID 14554208, <em>Gastric pentadecapeptide BPC 157 accelerates healing of transected rat Achilles tendon and in vitro stimulates tendocytes growth.</em> Covers Achilles tendon healing in rats and tendocyte-growth effects in vitro.</li><li>2004. PMID 15153646, <em>Doxorubicine-congestive heart failure-increased big endothelin-1 plasma concentration: reversal by amlodipine, losartan, and gastric pentadecapeptide BPC157 in rat and mouse.</em> Covers doxorubicin-associated heart-failure and endothelin-related vascular injury contexts.</li><li>2004. PMID 15531385, <em>Effects of pentadecapeptide BPC157 on regional serotonin synthesis in the rat brain: alpha-methyl-L-tryptophan autoradiographic measurements.</em> Covers regional serotonin-synthesis effects in rat brain.</li><li>2004. PMID 15381050, <em>The influence of gastric pentadecapeptide BPC 157 on acute and chronic ethanol administration in mice.</em> Covers acute and chronic ethanol-exposure models in mice.</li><li>2005. PMID 15840402, <em>Gastric pentadecapeptide BPC 157 effective against serotonin syndrome in rats.</em> Covers serotonin-syndrome outcomes in rats.</li><li>2006. PMID 16583442, <em>Achilles detachment in rat and stable gastric pentadecapeptide BPC 157: Promoted tendon-to-bone healing and opposed corticosteroid aggravation.</em> Covers tendon-to-bone healing and corticosteroid-aggravated injury in a musculoskeletal animal model.</li><li>2007. PMID 17713731, <em>Stable gastric pentadecapeptide BPC 157 in trials for inflammatory bowel disease (PL-10, PLD-116, PL14736, Pliva, Croatia) heals ileoileal anastomosis in the rat.</em> Covers rat anastomosis healing and also documents the literature's recurring references to earlier IBD trial programs.</li><li>2009. PMID 20388962, <em>Gastric pentadecapeptide BPC 157 counteracts morphine-induced analgesia in mice.</em> Covers morphine-induced analgesia in a mouse pharmacology model.</li><li>2009. PMID 20388964, <em>Modulatory effect of gastric pentadecapeptide BPC 157 on angiogenesis in muscle and tendon healing.</em> Covers angiogenesis in muscle and tendon healing.</li></ul>
+<h3>2010s</h3>
+<ul><li>2010. PMID 20190676, <em>Impact of pentadecapeptide BPC 157 on muscle healing impaired by systemic corticosteroid application.</em> Covers muscle-healing outcomes when repair is impaired by systemic corticosteroid exposure.</li><li>2010. PMID 20225319, <em>Pentadecapeptide BPC 157 (PL 14736) improves ligament healing in the rat.</em> Covers rat medial collateral ligament healing and is one of the most-cited musculoskeletal papers in the library.</li><li>2011. PMID 21645505, <em>Ibuprofen hepatic encephalopathy, hepatomegaly, gastric lesion and gastric pentadecapeptide BPC 157 in rats.</em> Covers ibuprofen-related hepatic, gastric, and encephalopathy outcomes in rats.</li><li>2011. PMID 21295044, <em>Pentadecapeptide BPC 157 and its effects on a NSAID toxicity model: diclofenac-induced gastrointestinal, liver, and encephalopathy lesions.</em> Covers diclofenac-related gastrointestinal, liver, and encephalopathy lesions.</li><li>2011. PMID 21030672, <em>The promoting effect of pentadecapeptide BPC 157 on tendon healing involves tendon outgrowth, cell survival, and cell migration.</em> Covers tendon outgrowth, fibroblast survival, migration, and FAK/paxillin signaling in a mechanistic tendon-healing study.</li><li>2012. PMID 21840572, <em>Pentadecapeptide BPC 157 reduces bleeding time and thrombocytopenia after amputation in rats treated with heparin, warfarin or aspirin.</em> Covers bleeding time and thrombocytopenia in anticoagulant- or antiplatelet-treated rats.</li><li>2013. PMID 24304574, <em>Stable gastric pentadecapeptide BPC 157 heals cysteamine-colitis and colon-colon-anastomosis and counteracts cuprizone brain injuries and motor disability.</em> Covers a multisystem animal paper spanning colitis, anastomosis, brain injury, and motor disability models.</li><li>2014. PMID 23782145, <em>BPC 157 and blood vessels.</em> Covers vascular and endothelial themes that recur across later BPC-157 claims.</li><li>2014. PMID 23755725, <em>Stable gastric pentadecapeptide BPC 157-NO-system relation.</em> Covers the nitric-oxide-system framing that appears repeatedly across the literature.</li><li>2015. NCT02637284, <em>PCO-02 - Safety and Pharmacokinetics Trial.</em> Covers a registered phase I randomized placebo-controlled oral safety and pharmacokinetic study in healthy volunteers, with no posted results.</li><li>2016. PMID 27895400, <em>Esophagogastric anastomosis in rats: Improved healing by BPC 157 and L-arginine, aggravated by L-NAME.</em> Covers esophagogastric anastomosis healing in relation to nitric-oxide pathway modifiers.</li><li>2016. PMID 27815173, <em>Stable gastric pentadecapeptide BPC 157 and bupivacaine.</em> Covers a bupivacaine-related injury or pharmacology context.</li><li>2017. PMID 29358856, <em>Stable gastric pentadecapeptide BPC 157 in the treatment of colitis and ischemia and reperfusion in rats: New insights.</em> Covers colitis together with ischemia-reperfusion in a detailed gastrointestinal preclinical paper.</li><li>2018. PMID 30279308, <em>An endogeous defensive concept, renewed cytoprotection/adaptive cytoprotection: intra(per)-oral/intragastric strong alcohol in rat. Involvement of pentadecapeptide BPC 157 and nitric oxide system.</em> Covers cytoprotection, adaptive cytoprotection, alcohol injury, and nitric-oxide-system themes.</li><li>2018. PMID 29998800, <em>BPC 157 and Standard Angiogenic Growth Factors. Gastrointestinal Tract Healing, Lessons from Tendon, Ligament, Muscle and Bone Healing.</em> Covers an integrative review connecting angiogenic growth factors, GI healing, and musculoskeletal repair themes.</li><li>2018. PMID 29898649, <em>BPC157 as Potential Agent Rescuing from Cancer Cachexia.</em> Covers cancer-cachexia and systemic catabolic-injury contexts.</li><li>2018. PMID 29879879, <em>Novel Cytoprotective Mediator, Stable Gastric Pentadecapeptide BPC 157. Vascular Recruitment and Gastrointestinal Tract Healing.</em> Covers cytoprotection, vascular recruitment, and gastrointestinal-tract healing in review form.</li><li>2019. PMID 30915550, <em>Gastric pentadecapeptide body protection compound BPC 157 and its role in accelerating musculoskeletal soft tissue healing.</em> Covers the musculoskeletal soft-tissue-healing argument in a later review.</li><li>2019. PMID 31976029, <em>Intragastric Application of Aspirin, Clopidogrel, Cilostazol, and BPC 157 in Rats: Platelet Aggregation and Blood Clot.</em> Covers platelet aggregation and blood-clot outcomes in rats.</li></ul>
+<h3>2020s</h3>
+<ul><li>2020. PMID 32445447, <em>BPC 157 Rescued NSAID-cytotoxicity Via Stabilizing Intestinal Permeability and Enhancing Cytoprotection.</em> Covers NSAID-related cytotoxicity, intestinal permeability, and cytoprotection.</li><li>2020. PMID 32547687, <em>Pentadecapeptide BPC 157 resolves Pringle maneuver in rats, both ischemia and reperfusion.</em> Covers liver ischemia-reperfusion injury in the Pringle maneuver model.</li><li>2020. PMID 32226643, <em>Pentadecapeptide BPC 157 resolves suprahepatic occlusion of the inferior caval vein, Budd-Chiari syndrome model in rats.</em> Covers a Budd-Chiari syndrome rat model and broader vascular or hemodynamic claims.</li><li>2021. PMID 34324435, <em>Intra-Articular Injection of BPC 157 for Multiple Types of Knee Pain.</em> Covers a small retrospective clinic report on mixed knee-pain presentations after intra-articular BPC-157 use.</li><li>2021. PMID 34680419, <em>Robert's Intragastric Alcohol-Induced Gastric Lesion Model as an Escalated General Peripheral and Central Syndrome, Counteracted by the Stable Gastric Pentadecapeptide BPC 157.</em> Covers alcohol-induced gastric-lesion and broader peripheral or central syndrome framing.</li><li>2021. PMID 34267654, <em>Stable Gastric Pentadecapeptide BPC 157 and Wound Healing.</em> Covers a broad wound-healing review across repair models.</li><li>2021. PMID 34829776, <em>Stable Gastric Pentadecapeptide BPC 157 as a Therapy for the Disable Myotendinous Junctions in Rats.</em> Covers disabled myotendinous junctions in rats.</li><li>2021. PMID 34572392, <em>Stable Gastric Pentadecapeptide BPC 157 Heals Established Vesicovaginal Fistula and Counteracts Stone Formation in Rats.</em> Covers vesicovaginal fistula healing and stone-formation outcomes in rats.</li><li>2022. PMID 35884767, <em>BPC 157, L-NAME, L-Arginine, NO-Relation, in the Suited Rat Ketamine Models Resembling &quot;Negative-Like&quot; Symptoms of Schizophrenia.</em> Covers ketamine-model negative-like symptoms and nitric-oxide-system framing.</li><li>2022. PMID 36588717, <em>Pharmacokinetics, distribution, metabolism, and excretion of body-protective compound 157, a potential drug for treating various wounds, in rats and dogs.</em> Covers pharmacokinetics, distribution, metabolism, and excretion in animal models.</li><li>2022. PMID 36551977, <em>Stable Gastric Pentadecapeptide BPC 157 and Striated, Smooth, and Heart Muscle.</em> Covers claims around striated, smooth, and heart-muscle contexts in review form.</li><li>2022. PMID 35449779, <em>The anti-nociceptive effect of BPC-157 on the incisional pain model in rats.</em> Covers anti-nociceptive effects in an incisional pain model.</li><li>2023. USADA guidance, <em>BPC-157: Experimental Peptide Creates Risk for Athletes.</em> Covers anti-doping status and athlete-use risk, stating that BPC-157 is prohibited under WADA category S0 and not approved for human clinical use.</li><li>2024. FDA safety page, <em>Safety Risks Associated with Certain Bulk Drug Substances Nominated for Use in Compounding: BPC-157 entry.</em> Covers FDA safety concerns around immunogenicity, impurity complexity, and nonclinical risk signals.</li><li>2024. PMID 38675421, <em>The Stable Gastric Pentadecapeptide BPC 157 Pleiotropic Beneficial Activity and Its Possible Relations with Neurotransmitter Activity.</em> Covers neurotransmitter and neuropharmacology-oriented mechanism claims in review form.</li><li>2025. PMID 40756949, <em>Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review.</em> Covers the clearest recent synthesis showing that the evidence base remains overwhelmingly preclinical.</li><li>2025. PMID 40005999, <em>Multifunctionality and Possible Medical Application of the BPC 157 Peptide-Literature and Patent Review.</em> Covers a broad literature and patent review that also acknowledges the lack of sufficient human clinical evidence for approval.</li><li>2025. PMID 40131143, <em>Safety of Intravenous Infusion of BPC157 in Humans: A Pilot Study.</em> Covers a two-person intravenous human safety pilot.</li><li>2026. PMID 41490200, <em>Therapeutic Peptides in Orthopaedics: Applications, Challenges, and Future Directions.</em> Covers a broader orthopaedic peptide review that treats BPC-157 as promising preclinically but still lacking clinical-trial support.</li></ul>
+<h2>Reading notes</h2>
+<ul><li>The list is chronological, not quality-ranked.</li><li>Most sources are preclinical or review material.</li><li>The human-facing record in the chronology remains narrow: one registry record and two small published human papers.</li><li>The chronology is useful as a map of the literature, but it does not change the core conclusion that human evidence remains thin.</li></ul>
+      </article>
+    </main>
+  </body>
+</html>

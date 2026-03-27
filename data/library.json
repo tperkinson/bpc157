@@ -76,6 +76,8 @@
       "date": "2026-03-27",
       "summary": "A public-facing report covering the origin of the literature, the expansion of the catalog to 59 traceable sources, and why the clinical evidence picture still remains thin.",
       "path": "research/reports/2026-03-27-bpc157-history-and-evidence.md",
+      "htmlPath": "docs/reports/2026-03-27-bpc157-history-and-evidence.html",
+      "priority": 10,
       "audience": "public"
     },
     {
@@ -85,6 +87,17 @@
       "summary": "A summary report tying the historical development of BPC-157 research to the current 59-source inventory documented in the repository.",
       "path": "research/reports/2026-03-27-bpc157-historical-source-summary.md",
       "htmlPath": "docs/reports/2026-03-27-bpc157-historical-source-summary.html",
+      "priority": 20,
+      "audience": "public"
+    },
+    {
+      "id": "chronological-source-report",
+      "title": "BPC-157: chronological source report",
+      "date": "2026-03-27",
+      "summary": "A bullet-point chronological report of every source currently in the library, with a short note on what each source covers.",
+      "path": "research/reports/2026-03-27-bpc157-chronological-source-report.md",
+      "htmlPath": "docs/reports/2026-03-27-bpc157-chronological-source-report.html",
+      "priority": 30,
       "audience": "public"
     },
     {
@@ -93,6 +106,8 @@
       "date": "2026-03-27",
       "summary": "The operating structure for source finding, reference mining, storage, cataloging, retrieval, and agent handoff so a fresh thread can continue the project without losing context.",
       "path": "research/reports/2026-03-27-librarian-system.md",
+      "htmlPath": "docs/reports/2026-03-27-librarian-system.html",
+      "priority": 90,
       "audience": "project"
     }
   ],

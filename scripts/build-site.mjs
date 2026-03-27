@@ -3,6 +3,20 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
+const sortReports = (reports) =>
+  [...reports].sort((a, b) => {
+    const priorityDiff = (a.priority ?? 999) - (b.priority ?? 999);
+    if (priorityDiff !== 0) {
+      return priorityDiff;
+    }
+
+    const dateDiff = b.date.localeCompare(a.date);
+    if (dateDiff !== 0) {
+      return dateDiff;
+    }
+
+    return a.title.localeCompare(b.title);
+  });
 
 const validate = spawnSync("node", ["scripts/validate-library.mjs"], {
   cwd: root,
@@ -13,12 +27,23 @@ if (validate.status !== 0) {
   process.exit(validate.status ?? 1);
 }
 
+const renderReports = spawnSync("node", ["scripts/render-report-pages.mjs"], {
+  cwd: root,
+  stdio: "inherit"
+});
+
+if (renderReports.status !== 0) {
+  process.exit(renderReports.status ?? 1);
+}
+
 const libraryPath = path.join(root, "data", "library.json");
 const outputDir = path.join(root, "docs", "data");
 const outputPath = path.join(outputDir, "site-data.json");
 
 const library = JSON.parse(fs.readFileSync(libraryPath, "utf8"));
-const publicReports = library.reports.filter((report) => report.audience === "public");
+const publicReports = sortReports(
+  library.reports.filter((report) => report.audience === "public")
+);
 const {
   librarianWorkflow: _librarianWorkflow,
   agentMemory: _agentMemory,

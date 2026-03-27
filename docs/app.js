@@ -20,6 +20,20 @@ const els = {
 
 const badge = (text) => `<span class="badge">${text}</span>`;
 
+const sortReports = (reports) => [...reports].sort((a, b) => {
+  const priorityDiff = (a.priority ?? 999) - (b.priority ?? 999);
+  if (priorityDiff !== 0) {
+    return priorityDiff;
+  }
+
+  const dateDiff = b.date.localeCompare(a.date);
+  if (dateDiff !== 0) {
+    return dateDiff;
+  }
+
+  return a.title.localeCompare(b.title);
+});
+
 const renderFindings = (findings) => {
   els.keyFindings.innerHTML = findings
     .map((finding) => `<article class="finding-card"><p>${finding}</p></article>`)
@@ -218,7 +232,9 @@ const init = async () => {
   const response = await fetch("./data/site-data.json");
   const data = await response.json();
   state.data = data;
-  const publicReports = data.reports.filter((report) => report.audience === "public");
+  const publicReports = sortReports(
+    data.reports.filter((report) => report.audience === "public")
+  );
 
   els.projectTitle.textContent = data.project.title;
   els.projectSubtitle.textContent = data.project.subtitle;
