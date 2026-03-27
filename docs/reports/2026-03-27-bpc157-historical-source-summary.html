@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPC-157: Historical Perspective and Source Inventory</title>
+    <meta
+      name="description"
+      content="Historical perspective and source inventory for the BPC-157 evidence library."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(214, 186, 117, 0.28), transparent 26%),
+          linear-gradient(180deg, #eee5d5 0%, #f7f3ec 46%, #ece1cf 100%);
+      }
+
+      .report-shell {
+        position: relative;
+        z-index: 1;
+        width: min(920px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 4rem;
+      }
+
+      .report-hero,
+      .report-body {
+        background: rgba(255, 252, 247, 0.84);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(28, 36, 33, 0.12);
+      }
+
+      .report-hero {
+        padding: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .report-body {
+        padding: 1.6rem;
+      }
+
+      .report-meta,
+      .report-links,
+      .citation-list {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .report-meta {
+        margin-bottom: 1rem;
+      }
+
+      .report-kicker {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+
+      .report-title {
+        margin: 0;
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        max-width: 11ch;
+      }
+
+      .report-subtitle {
+        margin: 1rem 0 0;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+        max-width: 62ch;
+      }
+
+      .report-links {
+        margin-top: 1.2rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        background: rgba(214, 186, 117, 0.28);
+        border: 1px solid rgba(136, 66, 38, 0.14);
+        font-size: 0.84rem;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 1rem;
+        margin: 1.4rem 0 1.6rem;
+      }
+
+      .summary-card {
+        padding: 1rem;
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .summary-card h3 {
+        margin-bottom: 0.35rem;
+        font-size: 1.05rem;
+      }
+
+      .report-body h2 {
+        margin-top: 2rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .report-body h3,
+      .report-body h4 {
+        margin-top: 1.4rem;
+        margin-bottom: 0.45rem;
+      }
+
+      .report-body p,
+      .report-body li {
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .report-body ul {
+        padding-left: 1.2rem;
+      }
+
+      .source-block {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid rgba(24, 33, 31, 0.12);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .source-block h4 {
+        margin-top: 0;
+      }
+
+      .source-block p {
+        margin-bottom: 0.55rem;
+      }
+
+      .citation-list a,
+      .report-links a {
+        color: var(--accent-deep);
+      }
+
+      @media (max-width: 560px) {
+        .report-shell {
+          width: min(100% - 1rem, 920px);
+          padding-top: 1rem;
+        }
+
+        .report-hero,
+        .report-body {
+          padding: 1rem;
+        }
+
+        .report-title {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backdrop backdrop-one"></div>
+    <div class="backdrop backdrop-two"></div>
+    <main class="report-shell">
+      <section class="report-hero">
+        <div class="report-meta">
+          <span class="pill">Public report</span>
+          <span class="pill">Updated 2026-03-27</span>
+        </div>
+        <p class="report-kicker">BPC-157 evidence library</p>
+        <h1 class="report-title">Historical Perspective and Source Inventory</h1>
+        <p class="report-subtitle">
+          A concise historical arc for BPC-157 and a grounded inventory of the source
+          categories that are actually documented in this repository.
+        </p>
+        <div class="report-links">
+          <a href="../index.html#reports">Back to dashboard</a>
+          <a href="https://github.com/tperkinson/bpc157/blob/main/research/reports/2026-03-27-bpc157-historical-source-summary.md" target="_blank" rel="noreferrer">View markdown source</a>
+          <a href="https://github.com/tperkinson/bpc157" target="_blank" rel="noreferrer">Open repository</a>
+        </div>
+      </section>
+
+      <article class="report-body">
+        <p>
+          This report answers two practical questions: what the BPC-157 story looks
+          like historically, and what source types in this project are backed by
+          actual traceable documents rather than repeated commentary.
+        </p>
+
+        <div class="summary-grid">
+          <section class="summary-card">
+            <h3>Historical core</h3>
+            <p>The indexed literature in this library starts in the 1990s with animal healing work.</p>
+          </section>
+          <section class="summary-card">
+            <h3>Human evidence</h3>
+            <p>The accessible human record remains thin: one registry entry and two small published papers.</p>
+          </section>
+          <section class="summary-card">
+            <h3>Best synthesis</h3>
+            <p>The 2025 HSS systematic review makes the imbalance explicit: 35 preclinical studies and 1 clinical study.</p>
+          </section>
+        </div>
+
+        <h2>Historical perspective</h2>
+
+        <h3>1. The story begins with healing and cytoprotection</h3>
+        <p>
+          The oldest indexed source currently in the repository is the 1997 paper
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>,
+          which presents BPC-157 as a gastric pentadecapeptide associated with healing
+          effects in rat models. That supports a narrow historical claim: BPC-157 has
+          been part of the experimental literature since at least the 1990s, but that
+          early literature is preclinical rather than clinical.
+        </p>
+
+        <h3>2. By the 2000s, the literature points to named development programs</h3>
+        <p>
+          The 2007 paper
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
+          matters because it references inflammatory bowel disease trial identifiers
+          such as PL-10, PLD-116, and PL14736. That is historically important, but
+          this repository does not yet have a complete published outcome trail for
+          those programs.
+        </p>
+
+        <h3>3. The 2010s expand the musculoskeletal and mechanistic literature</h3>
+        <p>
+          The current library includes two key examples:
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
+          on rat ligament healing and
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
+          on tendon fibroblast migration and signaling. These help explain why BPC-157
+          later entered sports-medicine and recovery discussions.
+        </p>
+
+        <h3>4. In the 2020s, public enthusiasm exceeds the human evidence base</h3>
+        <p>
+          The most useful current synthesis in the repository is the 2025 systematic review
+          <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>,
+          which reports 36 included studies from 1993 to 2024, with 35 preclinical
+          studies and 1 clinical study. That ratio is the cleanest single-frame summary
+          of the current evidence base in this project.
+        </p>
+
+        <h2>Source inventory with actual documents</h2>
+
+        <div class="source-block">
+          <h4>Foundational historical and preclinical papers</h4>
+          <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>
+            anchors the early healing literature. 
+            <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
+            extends that history and ties the literature to named IBD development programs.
+          </p>
+        </div>
+
+        <div class="source-block">
+          <h4>Preclinical musculoskeletal and mechanistic studies</h4>
+          <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
+            provides rat ligament-healing data, while
+            <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
+            provides a mechanistic tendon-fibroblast paper. These are examples of the kind
+            of work that drives downstream repair claims.
+          </p>
+        </div>
+
+        <div class="source-block">
+          <h4>Accessible human-facing records</h4>
+          <p>
+            <a href="https://clinicaltrials.gov/study/NCT02637284" target="_blank" rel="noreferrer">NCT02637284</a>
+            is the clearest formal human trial registry entry currently in the repo.
+          </p>
+          <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/34324435/" target="_blank" rel="noreferrer">PMID 34324435</a>
+            is a small retrospective knee-pain report, and
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40131143/" target="_blank" rel="noreferrer">PMID 40131143</a>
+            is a two-person IV safety pilot. Together they show that human reporting exists,
+            but remains too limited for strong clinical conclusions.
+          </p>
+        </div>
+
+        <div class="source-block">
+          <h4>Evidence syntheses and orientation reviews</h4>
+          <p>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40005999/" target="_blank" rel="noreferrer">PMID 40005999</a>
+            provides a literature-and-patent review,
+            <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>
+            provides the most useful current systematic review, and
+            <a href="https://pubmed.ncbi.nlm.nih.gov/41490200/" target="_blank" rel="noreferrer">PMID 41490200</a>
+            shows how BPC-157 is framed in current orthopaedic peptide discussions.
+          </p>
+        </div>
+
+        <div class="source-block">
+          <h4>Official regulatory and sports-governance sources</h4>
+          <p>
+            The repository includes
+            <a href="https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" target="_blank" rel="noreferrer">USADA guidance</a>
+            and the
+            <a href="https://www.fda.gov/drugs/human-drug-compounding/safety-risks-associated-certain-bulk-drug-substances-nominated-use-compounding" target="_blank" rel="noreferrer">FDA compounding safety-risk page</a>.
+            These are not efficacy studies, but they are essential for responsible public language.
+          </p>
+        </div>
+
+        <h2>What this source set supports</h2>
+        <ul>
+          <li>BPC-157 has a real indexed history in experimental research.</li>
+          <li>The current literature in this repo is dominated by preclinical animal and mechanistic work.</li>
+          <li>The accessible human source base remains small.</li>
+          <li>The strongest recent synthesis still shows a major human-evidence gap.</li>
+          <li>Official sources support caution around approval status, safety, and athlete use.</li>
+        </ul>
+
+        <h2>What it does not support</h2>
+        <ul>
+          <li>Strong efficacy claims in humans.</li>
+          <li>A fully reconstructed publication trail for the older IBD development program.</li>
+          <li>A settled safety profile for routine clinical use.</li>
+        </ul>
+
+        <h2>Primary links used in this report</h2>
+        <div class="citation-list">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/9403790/" target="_blank" rel="noreferrer">PMID 9403790</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/17713731/" target="_blank" rel="noreferrer">PMID 17713731</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/20225319/" target="_blank" rel="noreferrer">PMID 20225319</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/21030672/" target="_blank" rel="noreferrer">PMID 21030672</a>
+          <a href="https://clinicaltrials.gov/study/NCT02637284" target="_blank" rel="noreferrer">NCT02637284</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34324435/" target="_blank" rel="noreferrer">PMID 34324435</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/40131143/" target="_blank" rel="noreferrer">PMID 40131143</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/40005999/" target="_blank" rel="noreferrer">PMID 40005999</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/40756949/" target="_blank" rel="noreferrer">PMID 40756949</a>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/41490200/" target="_blank" rel="noreferrer">PMID 41490200</a>
+          <a href="https://www.usada.org/spirit-of-sport/bpc-157-peptide-prohibited/" target="_blank" rel="noreferrer">USADA</a>
+          <a href="https://www.fda.gov/drugs/human-drug-compounding/safety-risks-associated-certain-bulk-drug-substances-nominated-use-compounding" target="_blank" rel="noreferrer">FDA</a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

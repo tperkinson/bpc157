@@ -11,6 +11,7 @@ This repository tracks a small evidence-focused research project on BPC-157. It 
 
 - `data/library.json`: single source of truth for sources, findings, workflows, reports, and memory summaries
 - `research/reports/`: narrative reports for readers
+- `docs/reports/`: public-facing HTML versions of reports for GitHub Pages
 - `research/source-notes/`: source-level notes
 - `memory/`: startup brief, handoff, open questions, and resource map for a new agent thread
 - `scripts/`: validation, search, and site build utilities
@@ -25,6 +26,15 @@ npm run search -- human
 ```
 
 `npm run build` validates `data/library.json` and writes `docs/data/site-data.json`, which powers the public site.
+
+## Report Requirement
+
+Every report should exist in two forms:
+
+- a source markdown file under `research/reports/`
+- a polished HTML counterpart under `docs/reports/`
+
+Each report entry in `data/library.json` should include the markdown `path`, and when the HTML exists, an `htmlPath` so the dashboard can link directly to the public version.
 
 ## GitHub Pages
 

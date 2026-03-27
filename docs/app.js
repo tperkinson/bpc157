@@ -11,8 +11,8 @@ const els = {
   stats: document.querySelector("#stats"),
   researchQuestion: document.querySelector("#research-question"),
   reviewedDate: document.querySelector("#reviewed-date"),
-  workflow: document.querySelector("#workflow"),
-  agentMemory: document.querySelector("#agent-memory"),
+  evidenceContext: document.querySelector("#evidence-context"),
+  libraryGuide: document.querySelector("#library-guide"),
   reportList: document.querySelector("#report-list"),
   filters: document.querySelector("#filters"),
   sourceList: document.querySelector("#source-list")
@@ -26,10 +26,10 @@ const renderFindings = (findings) => {
     .join("");
 };
 
-const renderStats = (stats) => {
+const renderStats = (stats, publicReportCount) => {
   const cards = [
     ["Sources", stats.sourceCount],
-    ["Reports", stats.reportCount],
+    ["Public reports", publicReportCount],
     ["Human-focused items", Object.entries(stats.evidenceCounts)
       .filter(([key]) => key.startsWith("human"))
       .reduce((sum, [, count]) => sum + count, 0)],
@@ -48,39 +48,64 @@ const renderStats = (stats) => {
     .join("");
 };
 
-const renderWorkflow = (workflow) => {
-  els.workflow.innerHTML = workflow
-    .map(
-      (item) => `
-        <article class="stack-card">
-          <h3>${item.phase}</h3>
-          <p>${item.goal}</p>
-          <ul class="plain-list">
-            ${item.steps.map((step) => `<li>${step}</li>`).join("")}
-          </ul>
+const countHumanItems = (stats) => Object.entries(stats.evidenceCounts)
+  .filter(([key]) => key.startsWith("human"))
+  .reduce((sum, [, count]) => sum + count, 0);
+
+const renderEvidenceContext = (data) => {
+  const humanCount = countHumanItems(data.stats);
+  const preclinicalCount = data.stats.evidenceCounts.preclinical || 0;
+  const officialCount = data.sources.filter((source) => source.tags.includes("official-guidance")).length;
+
+  const cards = [
+    {
+      title: "Human evidence is sparse",
+      value: humanCount,
+      detail: "Published human records remain limited compared with the volume of claims made around BPC-157."
+    },
+    {
+      title: "Most material is preclinical",
+      value: preclinicalCount,
+      detail: "The catalog is dominated by animal and mechanistic work, which is useful for plausibility but not proof of clinical benefit."
+    },
+    {
+      title: "Official caution remains",
+      value: officialCount,
+      detail: "Regulatory and anti-doping sources are included so the library reflects the current risk and compliance picture, not only study claims."
+    }
+  ];
+
+  els.evidenceContext.innerHTML = `
+    <div class="insight-grid">
+      ${cards.map((card) => `
+        <article class="insight-card">
+          <span class="insight-value">${card.value}</span>
+          <h3>${card.title}</h3>
+          <p>${card.detail}</p>
         </article>
-      `
-    )
-    .join("");
+      `).join("")}
+    </div>
+  `;
 };
 
-const renderAgentMemory = (agentMemory) => {
-  els.agentMemory.innerHTML = `
+const renderLibraryGuide = () => {
+  const steps = [
+    "Start with the summary reports if you want the shortest public overview.",
+    "Use the source filters to narrow the catalog by topic, such as human, history, safety, or review.",
+    "Read both the main takeaway and the limitation line on each source card before drawing conclusions.",
+    "Open the primary link when you need the original registry record, abstract, or official notice."
+  ];
+
+  els.libraryGuide.innerHTML = `
     <article class="stack-card">
-      <h3>Mission</h3>
-      <p>${agentMemory.mission}</p>
-    </article>
-    <article class="stack-card">
-      <h3>Startup checklist</h3>
+      <h3>Read the library like evidence, not marketing</h3>
       <ul class="plain-list">
-        ${agentMemory.startupChecklist.map((item) => `<li>${item}</li>`).join("")}
+        ${steps.map((step) => `<li>${step}</li>`).join("")}
       </ul>
     </article>
     <article class="stack-card">
-      <h3>Core resources</h3>
-      <ul class="plain-list">
-        ${agentMemory.resources.map((item) => `<li><code>${item}</code></li>`).join("")}
-      </ul>
+      <h3>What the tags mean</h3>
+      <p class="body-copy">Tags group the same source catalog by topic and role, so you can separate human evidence, preclinical work, mechanistic papers, reviews, and official guidance.</p>
     </article>
   `;
 };
@@ -96,7 +121,14 @@ const renderReports = (reports) => {
           </div>
           <h3>${report.title}</h3>
           <p>${report.summary}</p>
-          <a href="https://github.com/tperkinson/bpc157/blob/main/${report.path}" target="_blank" rel="noreferrer">Open report</a>
+          <div class="link-row">
+            ${
+              report.htmlPath
+                ? `<a href="./${report.htmlPath.replace(/^docs\//, "")}" target="_blank" rel="noreferrer">Read HTML</a>`
+                : ""
+            }
+            <a href="https://github.com/tperkinson/bpc157/blob/main/${report.path}" target="_blank" rel="noreferrer">View markdown</a>
+          </div>
         </article>
       `
     )
@@ -186,6 +218,7 @@ const init = async () => {
   const response = await fetch("./data/site-data.json");
   const data = await response.json();
   state.data = data;
+  const publicReports = data.reports.filter((report) => report.audience === "public");
 
   els.projectTitle.textContent = data.project.title;
   els.projectSubtitle.textContent = data.project.subtitle;
@@ -194,10 +227,10 @@ const init = async () => {
   els.reviewedDate.textContent = `Last reviewed: ${data.project.lastReviewed}`;
 
   renderFindings(data.keyFindings);
-  renderStats(data.stats);
-  renderWorkflow(data.librarianWorkflow);
-  renderAgentMemory(data.agentMemory);
-  renderReports(data.reports);
+  renderStats(data.stats, publicReports.length);
+  renderEvidenceContext(data);
+  renderLibraryGuide();
+  renderReports(publicReports);
   renderFilters(data.sources);
   renderSources();
   revealOnScroll();

@@ -22,6 +22,8 @@ This project needs two retrieval systems at once:
 - Record every accepted source in `data/library.json`.
 - Create a note in `research/source-notes/` when a source changes the top-level summary or requires nuance.
 - Use stable links and persistent identifiers whenever possible.
+- Every report must have a markdown source file in `research/reports/` and a public HTML counterpart in `docs/reports/`.
+- Add the HTML location to the matching report entry in `data/library.json` so the dashboard can link to it directly.
 
 ### Cataloging
 
@@ -36,6 +38,7 @@ Each source record should answer:
 
 - Terminal retrieval: `npm run search -- <term>`
 - Human-readable reports: `research/reports/`
+- Public report pages: `docs/reports/`
 - Public browsing: GitHub Pages site under `docs/`
 
 ## Agent memory structure

@@ -161,6 +161,7 @@ h3 {
 
 .findings,
 .stats,
+.insight-grid,
 .report-list,
 .source-list {
   display: grid;
@@ -174,6 +175,7 @@ h3 {
 
 .finding-card,
 .stat-card,
+.insight-card,
 .stack-card,
 .report-card,
 .source-card {
@@ -200,6 +202,10 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
+.insight-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .stat-card {
   padding: 1rem;
 }
@@ -209,6 +215,24 @@ h3 {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   color: var(--forest);
+}
+
+.insight-card {
+  padding: 1rem;
+}
+
+.insight-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: rgba(36, 65, 55, 0.1);
+  color: var(--forest);
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .stat-label {

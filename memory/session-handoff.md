@@ -6,6 +6,7 @@
 - Seeded the evidence library with history, preclinical, human, registry, and official-guidance sources.
 - Added two narrative reports and source notes for the main references.
 - Added a third summary report focused on historical perspective and source inventory.
+- Added the rule that reports should also have public HTML counterparts linked from the dashboard.
 - Built the agent memory scaffolding and the public site skeleton.
 - Pushed the repository to GitHub and confirmed the Pages site is live.
 

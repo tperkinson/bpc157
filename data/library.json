@@ -1,8 +1,8 @@
 {
   "project": {
     "title": "BPC-157 Evidence Library",
-    "subtitle": "History, real studies, and a reusable research workflow",
-    "description": "A compact research system for tracking BPC-157 sources, summarizing evidence, and handing off context to new agent threads.",
+    "subtitle": "History, human studies, and the current state of the evidence",
+    "description": "A public-facing evidence library tracking BPC-157 sources, research summaries, and the strength of the documented literature.",
     "repoUrl": "https://github.com/tperkinson/bpc157",
     "siteUrlHint": "https://tperkinson.github.io/bpc157/",
     "lastReviewed": "2026-03-27"
@@ -84,6 +84,7 @@
       "date": "2026-03-27",
       "summary": "A summary report that ties the historical development of BPC-157 research to the actual source categories currently documented in the repository.",
       "path": "research/reports/2026-03-27-bpc157-historical-source-summary.md",
+      "htmlPath": "docs/reports/2026-03-27-bpc157-historical-source-summary.html",
       "audience": "public"
     },
     {

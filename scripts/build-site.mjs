@@ -18,6 +18,13 @@ const outputDir = path.join(root, "docs", "data");
 const outputPath = path.join(outputDir, "site-data.json");
 
 const library = JSON.parse(fs.readFileSync(libraryPath, "utf8"));
+const publicReports = library.reports.filter((report) => report.audience === "public");
+const {
+  librarianWorkflow: _librarianWorkflow,
+  agentMemory: _agentMemory,
+  reports: _reports,
+  ...publicLibrary
+} = library;
 
 const evidenceCounts = library.sources.reduce((acc, source) => {
   acc[source.evidenceTier] = (acc[source.evidenceTier] || 0) + 1;
@@ -30,11 +37,12 @@ const topicCounts = library.sources.reduce((acc, source) => {
 }, {});
 
 const payload = {
-  ...library,
+  ...publicLibrary,
+  reports: publicReports,
   generatedAt: new Date().toISOString(),
   stats: {
     sourceCount: library.sources.length,
-    reportCount: library.reports.length,
+    reportCount: publicReports.length,
     evidenceCounts,
     topicCounts
   }
