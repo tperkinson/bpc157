@@ -8,6 +8,7 @@
 - Added a third summary report focused on historical perspective and source inventory.
 - Added the rule that reports should also have public HTML counterparts linked from the dashboard.
 - Mined BPC-157-specific references from review articles and imported a first curated set into the source catalog.
+- Completed a second curated reference-import pass, bringing the catalog to 36 total sources.
 - Built the agent memory scaffolding and the public site skeleton.
 - Pushed the repository to GitHub and confirmed the Pages site is live.
 
@@ -18,10 +19,11 @@ The project is usable and public. The evidence summary is intentionally conserva
 ## Next recommended actions
 
 1. Expand the human-trial history around PL-10, PLD-116, and PL14736.
-2. Continue reference mining from review papers with inaccessible full-text XML or publisher-only reference lists.
-3. Add patent-level primary documents if the history section becomes a larger public feature.
-4. Keep the GitHub Pages deployment green after future source or site updates.
-5. Keep public claims aligned with `data/library.json`.
+2. Continue reference mining into the remaining older CNS, pain, NSAID-toxicity, bleeding, and hepatoprotection papers still surfaced by the miner.
+3. Continue reference mining from review papers with inaccessible full-text XML or publisher-only reference lists.
+4. Add patent-level primary documents if the history section becomes a larger public feature.
+5. Keep the GitHub Pages deployment green after future source or site updates.
+6. Keep public claims aligned with `data/library.json`.
 
 ## Guardrails
 
