@@ -11,6 +11,8 @@ This report answers two practical questions:
 
 The point is not to imply certainty. The point is to show what can actually be grounded in sources already stored in the project.
 
+At the time of this update, the repository contains 59 traceable sources. Most of that expansion came from mining the reference lists of review papers already in the library and adding the direct BPC-157 papers that those reviews cited.
+
 ## Historical perspective
 
 ### 1. The literature begins as a wound-healing and cytoprotection story
@@ -33,10 +35,12 @@ What this repository can support today is more limited than the broader claim of
 
 ### 3. In the 2010s, musculoskeletal and mechanistic papers become prominent
 
-The 2010 rat ligament paper and the 2011 tendon/mechanism paper help explain why BPC-157 later became popular in sports-medicine and recovery conversations. This period expands the literature into:
+The 2003 Achilles tendon paper, the 2006 tendon-to-bone paper, the 2010 rat ligament paper, and the 2011 tendon/mechanism paper help explain why BPC-157 later became popular in sports-medicine and recovery conversations. This period expands the literature into:
 
 - ligament repair
 - tendon healing
+- tendon-to-bone repair
+- muscle healing
 - fibroblast migration and survival
 - pathway-level mechanism claims
 
@@ -50,7 +54,7 @@ The modern picture is shaped by a mismatch:
 - there are only a few clearly accessible human-facing records
 - regulatory and anti-doping scrutiny is more visible
 
-The current repository supports that conclusion directly through one registry record, two small human papers, recent reviews, and official FDA and USADA material.
+The current repository supports that conclusion directly through one registry record, two small human papers, a larger network of preclinical and review papers, and official FDA and USADA material.
 
 ## Overview of source types with actual sources in this repository
 
@@ -58,6 +62,7 @@ The current repository supports that conclusion directly through one registry re
 
 These are the sources that establish the older research lineage:
 
+- PMID 8298609: 1993 foundational overview of BPC and stomach-stress-organoprotection
 - PMID 9403790: 1997 healing paper in rat models
 - PMID 17713731: 2007 rat anastomosis paper that also points to earlier IBD trial programs
 
@@ -65,14 +70,33 @@ These sources support the historical timeline but do not establish modern clinic
 
 ### B. Preclinical musculoskeletal and mechanistic studies
 
-These are the main examples currently cataloged:
+These are now a substantial block in the library, not just a couple of examples. Core entries include:
 
+- PMID 14554208: Achilles tendon healing and tendocyte growth
+- PMID 16583442: tendon-to-bone healing and corticosteroid aggravation
 - PMID 20225319: rat medial collateral ligament healing
 - PMID 21030672: tendon fibroblast migration, survival, and FAK/paxillin signaling
+- PMID 20190676: muscle healing impaired by corticosteroids
+- PMID 20388964: angiogenesis in muscle and tendon healing
+- PMID 34829776: myotendinous junction injury
 
 These sources are important because many public recovery claims appear to depend on this part of the evidence base.
 
-### C. Human evidence that is actually accessible in the current repo
+### C. Gastrointestinal, liver, cytoprotection, and vascular/hemodynamic studies
+
+This cluster is now one of the clearest themes in the repository:
+
+- PMID 29358856: colitis and ischemia-reperfusion
+- PMID 29879879: vascular recruitment and gastrointestinal tract healing review
+- PMID 11595456: portal hypertension and liver lesions in chronic alcohol models
+- PMID 32547687: liver ischemia-reperfusion / Pringle maneuver
+- PMID 32226643: Budd-Chiari syndrome model
+- PMID 27895400: esophagogastric anastomosis healing
+- PMID 34680419: alcohol-induced gastric-lesion model
+
+This section of the literature helps explain why BPC-157 is so often framed as a broad cytoprotective peptide rather than as a narrow tissue-specific agent.
+
+### D. Human evidence that is actually accessible in the current repo
 
 This is the most important category to keep narrow and honest.
 
@@ -94,7 +118,7 @@ This supports a statement that limited clinic-based human reporting exists. It d
 
 This supports a statement that minimal published human safety reporting exists. It does not establish general safety.
 
-### D. Evidence syntheses and orientation reviews
+### E. Evidence syntheses and orientation reviews
 
 These sources help interpret the overall field:
 
@@ -104,7 +128,7 @@ These sources help interpret the overall field:
 
 Of these, the 2025 HSS Journal systematic review is the most useful summary source in the current repo because it makes the imbalance explicit: 35 preclinical studies and 1 clinical study among its included set.
 
-### E. Official regulatory and sports-governance sources
+### F. Official regulatory and sports-governance sources
 
 These sources matter because they shape what can be said responsibly in public-facing material:
 
@@ -118,10 +142,15 @@ These sources support cautious language around approval status, athlete risk, an
 Taken together, the actual sources in this repository support the following summary:
 
 - BPC-157 has a real indexed history in experimental research.
-- The literature is dominated by preclinical animal and mechanistic work.
+- The literature is dominated by preclinical animal, mechanistic, injury-model, and review work.
 - There are only a few clearly accessible human-facing records in the current source set.
 - The best recent evidence synthesis still shows a major human-evidence gap.
 - Official sources justify cautious language around safety, approval, and sports use.
+
+The newer source-mining work also supports a more precise statement:
+
+- the repository is now much better as a map of the literature than it was in the first pass
+- but the added completeness mostly expanded preclinical breadth, not human certainty
 
 ## What the source inventory does not yet support
 

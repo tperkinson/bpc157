@@ -16,6 +16,7 @@ This project needs two retrieval systems at once:
 - Search primary databases first: PubMed, ClinicalTrials.gov, FDA, USADA/WADA, patent sources.
 - Add only sources that materially improve the history, evidence, or regulatory picture.
 - Prefer original studies over downstream commentary.
+- Mine the reference lists of in-scope review papers to expand the direct-source inventory before relying on broad review conclusions.
 
 ### Storing
 
@@ -34,9 +35,12 @@ Each source record should answer:
 - what is the strongest supported claim
 - what is the main limitation
 
+In practice, the current library shows why this matters: a source-count increase can mostly reflect additional preclinical and review material rather than any real change in human evidence quality.
+
 ### Retrieval
 
 - Terminal retrieval: `npm run search -- <term>`
+- Reference-mining support: `node scripts/mine-bpc-reference-candidates.mjs`
 - Human-readable reports: `research/reports/`
 - Public report pages: `docs/reports/`
 - Public browsing: GitHub Pages site under `docs/`
