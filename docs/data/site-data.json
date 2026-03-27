@@ -1315,6 +1315,276 @@
       "discoveredVia": [
         "pmid-40005999"
       ]
+    },
+    {
+      "id": "pmid-11595456",
+      "title": "Portal hypertension and liver lesions in chronically alcohol drinking rats prevented and reversed by stable gastric pentadecapeptide BPC 157 (PL-10, PLD-116), and propranolol, but not ranitidine.",
+      "year": 2001,
+      "authors": "Prkacin I, Separovic J, et al.",
+      "journal": "Journal of Physiology Paris",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical alcohol-injury study",
+      "evidenceTier": "preclinical",
+      "population": "Chronically alcohol-drinking rat model",
+      "topic": "liver",
+      "tags": [
+        "preclinical",
+        "liver",
+        "portal-hypertension",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct BPC-157 paper linking alcohol-associated portal hypertension and liver lesions to peptide treatment in rats.",
+      "limitations": "Animal alcohol-injury model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11595456/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0928-4257(01)00044-4",
+      "pmid": "11595456",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-24304574",
+      "title": "Stable gastric pentadecapeptide BPC 157 heals cysteamine-colitis and colon-colon-anastomosis and counteracts cuprizone brain injuries and motor disability.",
+      "year": 2013,
+      "authors": "Klicek R, Kolenc D, et al.",
+      "journal": "Journal of Physiology and Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical multisystem study",
+      "evidenceTier": "preclinical",
+      "population": "Animal colitis, anastomosis, and brain-injury models",
+      "topic": "multisystem",
+      "tags": [
+        "preclinical",
+        "colitis",
+        "brain-injury",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Multisystem animal paper combining colitis, anastomosis, and cuprizone-related brain/motor models under one BPC-157 study.",
+      "limitations": "Highly heterogeneous animal models, no clinical translation established.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24304574/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "24304574",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-23755725",
+      "title": "Stable gastric pentadecapeptide BPC 157-NO-system relation.",
+      "year": 2014,
+      "authors": "Sikiric P, Seiwerth S, et al.",
+      "journal": "Current Pharmaceutical Design",
+      "studyType": "Review",
+      "studyDesign": "Focused review",
+      "evidenceTier": "review",
+      "population": "Not applicable",
+      "topic": "mechanism",
+      "tags": [
+        "review",
+        "nitric-oxide",
+        "mechanism",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Key review focused on the nitric-oxide-system framing that recurs throughout the BPC-157 literature.",
+      "limitations": "Mechanistic synthesis built primarily from preclinical work.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23755725/",
+      "fullTextUrl": "",
+      "doi": "10.2174/13816128113190990411",
+      "pmid": "23755725",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-34680419",
+      "title": "Robert's Intragastric Alcohol-Induced Gastric Lesion Model as an Escalated General Peripheral and Central Syndrome, Counteracted by the Stable Gastric Pentadecapeptide BPC 157.",
+      "year": 2021,
+      "authors": "Gojkovic S, Krezic I, et al.",
+      "journal": "Biomedicines",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical alcohol-injury study",
+      "evidenceTier": "preclinical",
+      "population": "Rat intragastric alcohol lesion model",
+      "topic": "cytoprotection",
+      "tags": [
+        "preclinical",
+        "alcohol-injury",
+        "cytoprotection",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Recent animal paper extending the alcohol-lesion and cytoprotection line of the BPC-157 literature.",
+      "limitations": "Animal model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34680419/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8533388/",
+      "doi": "10.3390/biomedicines9101300",
+      "pmid": "34680419",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-35449779",
+      "title": "The anti-nociceptive effect of BPC-157 on the incisional pain model in rats.",
+      "year": 2022,
+      "authors": "Jung YH, Kim H, et al.",
+      "journal": "Journal of Dental Anesthesia and Pain Medicine",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical pain-model study",
+      "evidenceTier": "preclinical",
+      "population": "Rat incisional pain model",
+      "topic": "pain",
+      "tags": [
+        "preclinical",
+        "pain",
+        "nociception",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct pain-model paper assessing anti-nociceptive effects of BPC-157 in rats.",
+      "limitations": "Animal pain model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35449779/",
+      "fullTextUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8995671/",
+      "doi": "10.17245/jdapm.2022.22.2.97",
+      "pmid": "35449779",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-10791689",
+      "title": "The antidepressant effect of an antiulcer pentadecapeptide BPC 157 in Porsolt's test and chronic unpredictable stress in rats. A comparison with antidepressants.",
+      "year": 2000,
+      "authors": "Sikiric P, Separovic J, et al.",
+      "journal": "Journal of Physiology Paris",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical behavioral study",
+      "evidenceTier": "preclinical",
+      "population": "Rat Porsolt and chronic-stress models",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "depression-model",
+        "behavior",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct BPC-157 behavioral paper comparing antidepressant-like effects in rat models.",
+      "limitations": "Preclinical behavioral evidence only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10791689/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0928-4257(00)00148-0",
+      "pmid": "10791689",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-10707891",
+      "title": "The effect of a novel pentadecapeptide BPC 157 on development of tolerance and physical dependence following repeated administration of diazepam.",
+      "year": 1999,
+      "authors": "Jelovac N, Sikiric P, et al.",
+      "journal": "Chinese Journal of Physiology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical dependence-model study",
+      "evidenceTier": "preclinical",
+      "population": "Animal diazepam tolerance/dependence model",
+      "topic": "neuropharmacology",
+      "tags": [
+        "preclinical",
+        "dependence",
+        "diazepam",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct BPC-157 study on tolerance and physical dependence after repeated diazepam exposure.",
+      "limitations": "Animal dependence model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10707891/",
+      "fullTextUrl": "",
+      "doi": "",
+      "pmid": "10707891",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-9298922",
+      "title": "The influence of a novel pentadecapeptide, BPC 157, on N(G)-nitro-L-arginine methylester and L-arginine effects on stomach mucosa integrity and blood pressure.",
+      "year": 1997,
+      "authors": "Sikiric P, Seiwerth S, et al.",
+      "journal": "European Journal of Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical NO-system study",
+      "evidenceTier": "preclinical",
+      "population": "Animal stomach-mucosa and blood-pressure models",
+      "topic": "mechanism",
+      "tags": [
+        "preclinical",
+        "nitric-oxide",
+        "blood-pressure",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Older direct BPC-157 paper linking stomach-mucosa integrity and blood-pressure effects to nitric-oxide pathway manipulation.",
+      "limitations": "Preclinical physiology model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9298922/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0014-2999(97)01033-9",
+      "pmid": "9298922",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-9403788",
+      "title": "The influence of BPC 157 on nitric oxide agonist and antagonist induced lesions in broiler chicks.",
+      "year": 1997,
+      "authors": "Grabarevic Z, Tisljar M, et al.",
+      "journal": "Journal of Physiology Paris",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical NO-system study",
+      "evidenceTier": "preclinical",
+      "population": "Broiler chick lesion model",
+      "topic": "mechanism",
+      "tags": [
+        "preclinical",
+        "nitric-oxide",
+        "avian-model",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Older non-rodent direct BPC-157 paper on nitric-oxide agonist/antagonist lesion models.",
+      "limitations": "Avian model with limited direct translational relevance.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9403788/",
+      "fullTextUrl": "",
+      "doi": "10.1016/S0928-4257(97)89478-8",
+      "pmid": "9403788",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
+    },
+    {
+      "id": "pmid-15381050",
+      "title": "The influence of gastric pentadecapeptide BPC 157 on acute and chronic ethanol administration in mice.",
+      "year": 2004,
+      "authors": "Blagaic AB, Blagaic V, Romic Z, Sikiric P",
+      "journal": "European Journal of Pharmacology",
+      "studyType": "Journal article",
+      "studyDesign": "Preclinical alcohol-exposure study",
+      "evidenceTier": "preclinical",
+      "population": "Mouse acute and chronic ethanol models",
+      "topic": "alcohol-injury",
+      "tags": [
+        "preclinical",
+        "ethanol",
+        "alcohol-injury",
+        "reference-mined"
+      ],
+      "keyTakeaway": "Direct alcohol-exposure paper predating the later nitric-oxide-modulated ethanol paper already in the catalog.",
+      "limitations": "Animal alcohol model only.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15381050/",
+      "fullTextUrl": "",
+      "doi": "10.1016/j.ejphar.2004.07.112",
+      "pmid": "15381050",
+      "discoveredVia": [
+        "pmid-40005999"
+      ]
     }
   ],
   "reports": [
@@ -1336,16 +1606,16 @@
       "audience": "public"
     }
   ],
-  "generatedAt": "2026-03-27T14:28:07.566Z",
+  "generatedAt": "2026-03-27T14:33:41.570Z",
   "stats": {
-    "sourceCount": 49,
+    "sourceCount": 59,
     "reportCount": 2,
     "evidenceCounts": {
-      "preclinical": 31,
+      "preclinical": 40,
       "human-trial-registry": 1,
       "human-observational": 1,
       "human-pilot": 1,
-      "review": 12,
+      "review": 13,
       "systematic-review": 1,
       "official-guidance": 2
     },
@@ -1353,7 +1623,7 @@
       "history": 3,
       "human evidence": 3,
       "musculoskeletal": 5,
-      "mechanism": 4,
+      "mechanism": 7,
       "review": 3,
       "evidence synthesis": 1,
       "orthopaedics": 1,
@@ -1363,15 +1633,18 @@
       "muscle": 2,
       "pharmacokinetics": 1,
       "cardiovascular": 1,
-      "neuropharmacology": 6,
+      "neuropharmacology": 8,
       "pharmacology": 1,
       "cachexia": 1,
-      "cytoprotection": 1,
+      "cytoprotection": 2,
       "vascular": 1,
-      "liver": 2,
+      "liver": 3,
       "fistula": 1,
       "toxicity": 2,
-      "hemostasis": 2
+      "hemostasis": 2,
+      "multisystem": 1,
+      "pain": 1,
+      "alcohol-injury": 1
     }
   }
 }

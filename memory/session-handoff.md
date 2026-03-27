@@ -10,6 +10,7 @@
 - Mined BPC-157-specific references from review articles and imported a first curated set into the source catalog.
 - Completed a second curated reference-import pass, bringing the catalog to 36 total sources.
 - Completed a third curated reference-import pass focused on older pain, hepatoprotection, toxicity, bleeding, and muscle-healing papers.
+- Completed a fourth curated reference-import pass covering alcohol-injury, NO-system, pain, and older antidepressant/dependence papers.
 - Built the agent memory scaffolding and the public site skeleton.
 - Pushed the repository to GitHub and confirmed the Pages site is live.
 
@@ -20,7 +21,7 @@ The project is usable and public. The evidence summary is intentionally conserva
 ## Next recommended actions
 
 1. Expand the human-trial history around PL-10, PLD-116, and PL14736.
-2. Continue reference mining into the remaining pain-model, alcohol-injury, portal-hypertension, fistula/colitis, and NO-system papers still surfaced by the miner.
+2. Continue reference mining into the remaining no-PMID titles and the smaller leftover PMID-backed queue, especially VEGFR2, NSAID-counteraction, and older colitis/fistula-related papers.
 3. Continue reference mining from review papers with inaccessible full-text XML or publisher-only reference lists.
 4. Add patent-level primary documents if the history section becomes a larger public feature.
 5. Keep the GitHub Pages deployment green after future source or site updates.
