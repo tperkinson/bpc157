@@ -28,7 +28,7 @@ npm run search -- human
 
 ## GitHub Pages
 
-This repo is set up for GitHub Pages deployment through [`.github/workflows/deploy-pages.yml`](/Users/terryperkinson/codex/bpc157/.github/workflows/deploy-pages.yml). Once the repository is public and GitHub Pages is enabled, the expected URL is:
+This repo is set up for GitHub Pages deployment through [`.github/workflows/deploy-pages.yml`](/Users/terryperkinson/codex/bpc157/.github/workflows/deploy-pages.yml). The live URL is:
 
 `https://tperkinson.github.io/bpc157/`
 
